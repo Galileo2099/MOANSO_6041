@@ -40,9 +40,9 @@ namespace CapaDatos
                     entCliente Cli = new entCliente();
                     Cli.idCliente = Convert.ToInt32(dr["idCliente"]);
                     Cli.razonSocial = dr["razonSocial"].ToString();
-                    Cli.idTipoCliente = Convert.ToInt32(dr["idTipoCliente"]);
+                    Cli.idTipoCliente = Convert.ToInt32(dr["idTipoCliente"].ToString());
                     Cli.fecRegCliente = Convert.ToDateTime(dr["fecRegCliente"]);
-                    Cli.idCiudad = Convert.ToInt32(dr["idCiudad"]);
+                    Cli.idCiudad = Convert.ToInt32(dr["idCiudad"].ToString());
                     Cli.estCliente = Convert.ToBoolean(dr["estCliente"]);
                     lista.Add(Cli);
                 }
@@ -121,7 +121,7 @@ namespace CapaDatos
             return edita;
         }
 
-        //DESHABILITA
+        //DESHABILITA cliente
         public Boolean DeshabilitaCliente(entCliente Cli){
             SqlCommand cmd = null;
             Boolean delete = false;

@@ -79,7 +79,7 @@ namespace Practica_clase_MOANSO
 
         //Botones del Groupbox
         //Agregar & Insertar
-        private void btnAgregar_Click(object sender, EventArgs e){
+        private void btnAddMod_Click(object sender, EventArgs e){
             if(accionSeleccionada)
             {
                 try

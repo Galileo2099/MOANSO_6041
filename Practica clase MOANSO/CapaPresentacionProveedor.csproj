@@ -52,10 +52,25 @@
     <Compile Include="FormularioMantenedorCliente.Designer.cs">
       <DependentUpon>FormularioMantenedorCliente.cs</DependentUpon>
     </Compile>
+    <Compile Include="FourmularioCompra.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FourmularioCompra.Designer.cs">
+      <DependentUpon>FourmularioCompra.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormularioGarantia.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormularioGarantia.Designer.cs">
+      <DependentUpon>FormularioGarantia.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="FormularioMantenedorCliente.resx">
       <DependentUpon>FormularioMantenedorCliente.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FourmularioCompra.resx">
+      <DependentUpon>FourmularioCompra.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
