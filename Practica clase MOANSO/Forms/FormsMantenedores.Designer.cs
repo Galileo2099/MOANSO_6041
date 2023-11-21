@@ -29,25 +29,6 @@
         private void InitializeComponent()
         {
             this.tabControl1 = new System.Windows.Forms.TabControl();
-            this.tabPage1 = new System.Windows.Forms.TabPage();
-            this.gbx_datosprov = new System.Windows.Forms.GroupBox();
-            this.cbk_Estado_Cliente = new System.Windows.Forms.CheckBox();
-            this.dtPickerRegCliente = new System.Windows.Forms.DateTimePicker();
-            this.txt_id_Ciudad = new System.Windows.Forms.TextBox();
-            this.txt_id_TipoCliente = new System.Windows.Forms.TextBox();
-            this.txt_Razon_Social = new System.Windows.Forms.TextBox();
-            this.txt_id_proveedor = new System.Windows.Forms.TextBox();
-            this.label5 = new System.Windows.Forms.Label();
-            this.label4 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
-            this.label1 = new System.Windows.Forms.Label();
-            this.btn_cancelar_proveedor = new System.Windows.Forms.Button();
-            this.btn_AddMod_proveedor = new System.Windows.Forms.Button();
-            this.btn_deshabilitar_proveedor = new System.Windows.Forms.Button();
-            this.btn_editar_proveedor = new System.Windows.Forms.Button();
-            this.btn_nuevo_proveedor = new System.Windows.Forms.Button();
-            this.dgv_proveedor_mantenedor = new System.Windows.Forms.DataGridView();
             this.tabPage2 = new System.Windows.Forms.TabPage();
             this.grp_datos_cliente = new System.Windows.Forms.GroupBox();
             this.btn_addmod_cliente = new System.Windows.Forms.Button();
@@ -97,6 +78,21 @@
             this.btn_editar_vendedor = new System.Windows.Forms.Button();
             this.btn_nuevo_vendedor = new System.Windows.Forms.Button();
             this.dgv_vendedor_mantenedor = new System.Windows.Forms.DataGridView();
+            this.tabPage7 = new System.Windows.Forms.TabPage();
+            this.btn_deshabilitar_requerimientos = new System.Windows.Forms.Button();
+            this.btn_editar_requerimientos = new System.Windows.Forms.Button();
+            this.btn_nuevo_requerimientos = new System.Windows.Forms.Button();
+            this.dgv_requerimientos_mantenedor = new System.Windows.Forms.DataGridView();
+            this.gbx_datos_requerimientos = new System.Windows.Forms.GroupBox();
+            this.cbk_estado_requerimientos = new System.Windows.Forms.CheckBox();
+            this.dtp_reg_requerimientos = new System.Windows.Forms.DateTimePicker();
+            this.txt_des_requerimientos = new System.Windows.Forms.TextBox();
+            this.txt_id_requerimientos = new System.Windows.Forms.TextBox();
+            this.label25 = new System.Windows.Forms.Label();
+            this.label26 = new System.Windows.Forms.Label();
+            this.label27 = new System.Windows.Forms.Label();
+            this.btn_cancelar_requerimientos = new System.Windows.Forms.Button();
+            this.btn_AddMod_requerimientos = new System.Windows.Forms.Button();
             this.tabPage5 = new System.Windows.Forms.TabPage();
             this.btn_deshabilitar_gerente = new System.Windows.Forms.Button();
             this.btn_editar_gerente = new System.Windows.Forms.Button();
@@ -131,25 +127,7 @@
             this.btn_editar_jalmacen = new System.Windows.Forms.Button();
             this.btn_nuevo_jalmacen = new System.Windows.Forms.Button();
             this.dgv_jalmacen_mantenedor = new System.Windows.Forms.DataGridView();
-            this.tabPage7 = new System.Windows.Forms.TabPage();
-            this.btn_deshabilitar_requerimientos = new System.Windows.Forms.Button();
-            this.btn_editar_requerimientos = new System.Windows.Forms.Button();
-            this.btn_nuevo_requerimientos = new System.Windows.Forms.Button();
-            this.dgv_requerimientos_mantenedor = new System.Windows.Forms.DataGridView();
-            this.gbx_datos_requerimientos = new System.Windows.Forms.GroupBox();
-            this.cbk_estado_requerimientos = new System.Windows.Forms.CheckBox();
-            this.dtp_reg_requerimientos = new System.Windows.Forms.DateTimePicker();
-            this.txt_des_requerimientos = new System.Windows.Forms.TextBox();
-            this.txt_id_requerimientos = new System.Windows.Forms.TextBox();
-            this.label25 = new System.Windows.Forms.Label();
-            this.label26 = new System.Windows.Forms.Label();
-            this.label27 = new System.Windows.Forms.Label();
-            this.btn_cancelar_requerimientos = new System.Windows.Forms.Button();
-            this.btn_AddMod_requerimientos = new System.Windows.Forms.Button();
             this.tabControl1.SuspendLayout();
-            this.tabPage1.SuspendLayout();
-            this.gbx_datosprov.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dgv_proveedor_mantenedor)).BeginInit();
             this.tabPage2.SuspendLayout();
             this.grp_datos_cliente.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dtv_cliente_mantenedor)).BeginInit();
@@ -159,20 +137,19 @@
             this.tabPage4.SuspendLayout();
             this.grp_datos_vendedor.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgv_vendedor_mantenedor)).BeginInit();
+            this.tabPage7.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dgv_requerimientos_mantenedor)).BeginInit();
+            this.gbx_datos_requerimientos.SuspendLayout();
             this.tabPage5.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgv_gerente_mantenedor)).BeginInit();
             this.gbx_datos_gerente.SuspendLayout();
             this.tabPage6.SuspendLayout();
             this.gbx_datos_jalmacen.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgv_jalmacen_mantenedor)).BeginInit();
-            this.tabPage7.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dgv_requerimientos_mantenedor)).BeginInit();
-            this.gbx_datos_requerimientos.SuspendLayout();
             this.SuspendLayout();
             // 
             // tabControl1
             // 
-            this.tabControl1.Controls.Add(this.tabPage1);
             this.tabControl1.Controls.Add(this.tabPage2);
             this.tabControl1.Controls.Add(this.tabPage3);
             this.tabControl1.Controls.Add(this.tabPage4);
@@ -184,217 +161,6 @@
             this.tabControl1.SelectedIndex = 0;
             this.tabControl1.Size = new System.Drawing.Size(826, 489);
             this.tabControl1.TabIndex = 0;
-            // 
-            // tabPage1
-            // 
-            this.tabPage1.Controls.Add(this.gbx_datosprov);
-            this.tabPage1.Controls.Add(this.btn_deshabilitar_proveedor);
-            this.tabPage1.Controls.Add(this.btn_editar_proveedor);
-            this.tabPage1.Controls.Add(this.btn_nuevo_proveedor);
-            this.tabPage1.Controls.Add(this.dgv_proveedor_mantenedor);
-            this.tabPage1.Location = new System.Drawing.Point(4, 25);
-            this.tabPage1.Name = "tabPage1";
-            this.tabPage1.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage1.Size = new System.Drawing.Size(818, 460);
-            this.tabPage1.TabIndex = 0;
-            this.tabPage1.Text = "Proveedor";
-            this.tabPage1.UseVisualStyleBackColor = true;
-            // 
-            // gbx_datosprov
-            // 
-            this.gbx_datosprov.Controls.Add(this.cbk_Estado_Cliente);
-            this.gbx_datosprov.Controls.Add(this.dtPickerRegCliente);
-            this.gbx_datosprov.Controls.Add(this.txt_id_Ciudad);
-            this.gbx_datosprov.Controls.Add(this.txt_id_TipoCliente);
-            this.gbx_datosprov.Controls.Add(this.txt_Razon_Social);
-            this.gbx_datosprov.Controls.Add(this.txt_id_proveedor);
-            this.gbx_datosprov.Controls.Add(this.label5);
-            this.gbx_datosprov.Controls.Add(this.label4);
-            this.gbx_datosprov.Controls.Add(this.label3);
-            this.gbx_datosprov.Controls.Add(this.label2);
-            this.gbx_datosprov.Controls.Add(this.label1);
-            this.gbx_datosprov.Controls.Add(this.btn_cancelar_proveedor);
-            this.gbx_datosprov.Controls.Add(this.btn_AddMod_proveedor);
-            this.gbx_datosprov.Location = new System.Drawing.Point(3, 276);
-            this.gbx_datosprov.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.gbx_datosprov.Name = "gbx_datosprov";
-            this.gbx_datosprov.Padding = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.gbx_datosprov.Size = new System.Drawing.Size(813, 188);
-            this.gbx_datosprov.TabIndex = 9;
-            this.gbx_datosprov.TabStop = false;
-            this.gbx_datosprov.Text = "Datos del Proveedor";
-            // 
-            // cbk_Estado_Cliente
-            // 
-            this.cbk_Estado_Cliente.AutoSize = true;
-            this.cbk_Estado_Cliente.Location = new System.Drawing.Point(525, 81);
-            this.cbk_Estado_Cliente.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.cbk_Estado_Cliente.Name = "cbk_Estado_Cliente";
-            this.cbk_Estado_Cliente.Size = new System.Drawing.Size(157, 20);
-            this.cbk_Estado_Cliente.TabIndex = 18;
-            this.cbk_Estado_Cliente.Text = "Estado de proveedor";
-            this.cbk_Estado_Cliente.UseVisualStyleBackColor = true;
-            // 
-            // dtPickerRegCliente
-            // 
-            this.dtPickerRegCliente.Location = new System.Drawing.Point(543, 36);
-            this.dtPickerRegCliente.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.dtPickerRegCliente.Name = "dtPickerRegCliente";
-            this.dtPickerRegCliente.Size = new System.Drawing.Size(264, 22);
-            this.dtPickerRegCliente.TabIndex = 17;
-            // 
-            // txt_id_Ciudad
-            // 
-            this.txt_id_Ciudad.Location = new System.Drawing.Point(85, 140);
-            this.txt_id_Ciudad.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.txt_id_Ciudad.Name = "txt_id_Ciudad";
-            this.txt_id_Ciudad.Size = new System.Drawing.Size(200, 22);
-            this.txt_id_Ciudad.TabIndex = 16;
-            // 
-            // txt_id_TipoCliente
-            // 
-            this.txt_id_TipoCliente.Location = new System.Drawing.Point(92, 103);
-            this.txt_id_TipoCliente.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.txt_id_TipoCliente.Name = "txt_id_TipoCliente";
-            this.txt_id_TipoCliente.Size = new System.Drawing.Size(200, 22);
-            this.txt_id_TipoCliente.TabIndex = 15;
-            // 
-            // txt_Razon_Social
-            // 
-            this.txt_Razon_Social.Location = new System.Drawing.Point(92, 70);
-            this.txt_Razon_Social.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.txt_Razon_Social.Name = "txt_Razon_Social";
-            this.txt_Razon_Social.Size = new System.Drawing.Size(200, 22);
-            this.txt_Razon_Social.TabIndex = 14;
-            // 
-            // txt_id_proveedor
-            // 
-            this.txt_id_proveedor.Location = new System.Drawing.Point(40, 34);
-            this.txt_id_proveedor.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.txt_id_proveedor.Name = "txt_id_proveedor";
-            this.txt_id_proveedor.Size = new System.Drawing.Size(146, 22);
-            this.txt_id_proveedor.TabIndex = 13;
-            // 
-            // label5
-            // 
-            this.label5.AutoSize = true;
-            this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(387, 38);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(131, 20);
-            this.label5.TabIndex = 12;
-            this.label5.Text = "Fecha registro";
-            // 
-            // label4
-            // 
-            this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(6, 102);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(93, 20);
-            this.label4.TabIndex = 11;
-            this.label4.Text = "Telefono: ";
-            // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(6, 140);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(73, 20);
-            this.label3.TabIndex = 10;
-            this.label3.Text = "Cuidad:";
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(6, 70);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(80, 20);
-            this.label2.TabIndex = 9;
-            this.label2.Text = "Nombre:";
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(6, 34);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(28, 20);
-            this.label1.TabIndex = 6;
-            this.label1.Text = "ID";
-            // 
-            // btn_cancelar_proveedor
-            // 
-            this.btn_cancelar_proveedor.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_cancelar_proveedor.Location = new System.Drawing.Point(608, 119);
-            this.btn_cancelar_proveedor.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.btn_cancelar_proveedor.Name = "btn_cancelar_proveedor";
-            this.btn_cancelar_proveedor.Size = new System.Drawing.Size(116, 43);
-            this.btn_cancelar_proveedor.TabIndex = 7;
-            this.btn_cancelar_proveedor.Text = "Cancelar";
-            this.btn_cancelar_proveedor.UseVisualStyleBackColor = true;
-            this.btn_cancelar_proveedor.Click += new System.EventHandler(this.btn_cancelar_proveedor_Click_1);
-            // 
-            // btn_AddMod_proveedor
-            // 
-            this.btn_AddMod_proveedor.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_AddMod_proveedor.Location = new System.Drawing.Point(486, 119);
-            this.btn_AddMod_proveedor.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.btn_AddMod_proveedor.Name = "btn_AddMod_proveedor";
-            this.btn_AddMod_proveedor.Size = new System.Drawing.Size(116, 43);
-            this.btn_AddMod_proveedor.TabIndex = 8;
-            this.btn_AddMod_proveedor.Text = "---";
-            this.btn_AddMod_proveedor.UseVisualStyleBackColor = true;
-            this.btn_AddMod_proveedor.Click += new System.EventHandler(this.btn_AddMod_proveedor_Click_1);
-            // 
-            // btn_deshabilitar_proveedor
-            // 
-            this.btn_deshabilitar_proveedor.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_deshabilitar_proveedor.Location = new System.Drawing.Point(653, 137);
-            this.btn_deshabilitar_proveedor.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.btn_deshabilitar_proveedor.Name = "btn_deshabilitar_proveedor";
-            this.btn_deshabilitar_proveedor.Size = new System.Drawing.Size(137, 43);
-            this.btn_deshabilitar_proveedor.TabIndex = 7;
-            this.btn_deshabilitar_proveedor.Text = "Deshabilitar";
-            this.btn_deshabilitar_proveedor.UseVisualStyleBackColor = true;
-            this.btn_deshabilitar_proveedor.Click += new System.EventHandler(this.btn_deshabilitar_proveedor_Click_1);
-            // 
-            // btn_editar_proveedor
-            // 
-            this.btn_editar_proveedor.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_editar_proveedor.Location = new System.Drawing.Point(653, 88);
-            this.btn_editar_proveedor.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.btn_editar_proveedor.Name = "btn_editar_proveedor";
-            this.btn_editar_proveedor.Size = new System.Drawing.Size(137, 43);
-            this.btn_editar_proveedor.TabIndex = 6;
-            this.btn_editar_proveedor.Text = "Editar";
-            this.btn_editar_proveedor.UseVisualStyleBackColor = true;
-            this.btn_editar_proveedor.Click += new System.EventHandler(this.btn_editar_proveedor_Click_1);
-            // 
-            // btn_nuevo_proveedor
-            // 
-            this.btn_nuevo_proveedor.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_nuevo_proveedor.Location = new System.Drawing.Point(653, 39);
-            this.btn_nuevo_proveedor.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.btn_nuevo_proveedor.Name = "btn_nuevo_proveedor";
-            this.btn_nuevo_proveedor.Size = new System.Drawing.Size(137, 43);
-            this.btn_nuevo_proveedor.TabIndex = 5;
-            this.btn_nuevo_proveedor.Text = "Nuevo";
-            this.btn_nuevo_proveedor.UseVisualStyleBackColor = true;
-            this.btn_nuevo_proveedor.Click += new System.EventHandler(this.btn_nuevo_proveedor_Click_1);
-            // 
-            // dgv_proveedor_mantenedor
-            // 
-            this.dgv_proveedor_mantenedor.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgv_proveedor_mantenedor.Location = new System.Drawing.Point(6, 6);
-            this.dgv_proveedor_mantenedor.Name = "dgv_proveedor_mantenedor";
-            this.dgv_proveedor_mantenedor.RowHeadersWidth = 51;
-            this.dgv_proveedor_mantenedor.RowTemplate.Height = 24;
-            this.dgv_proveedor_mantenedor.Size = new System.Drawing.Size(611, 268);
-            this.dgv_proveedor_mantenedor.TabIndex = 0;
-            this.dgv_proveedor_mantenedor.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgv_proveedor_mantenedor_CellClick);
             // 
             // tabPage2
             // 
@@ -882,6 +648,172 @@
             this.dgv_vendedor_mantenedor.Size = new System.Drawing.Size(611, 268);
             this.dgv_vendedor_mantenedor.TabIndex = 0;
             // 
+            // tabPage7
+            // 
+            this.tabPage7.Controls.Add(this.btn_deshabilitar_requerimientos);
+            this.tabPage7.Controls.Add(this.btn_editar_requerimientos);
+            this.tabPage7.Controls.Add(this.btn_nuevo_requerimientos);
+            this.tabPage7.Controls.Add(this.dgv_requerimientos_mantenedor);
+            this.tabPage7.Controls.Add(this.gbx_datos_requerimientos);
+            this.tabPage7.Location = new System.Drawing.Point(4, 25);
+            this.tabPage7.Name = "tabPage7";
+            this.tabPage7.Size = new System.Drawing.Size(818, 460);
+            this.tabPage7.TabIndex = 6;
+            this.tabPage7.Text = "Requerimiento";
+            this.tabPage7.UseVisualStyleBackColor = true;
+            // 
+            // btn_deshabilitar_requerimientos
+            // 
+            this.btn_deshabilitar_requerimientos.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_deshabilitar_requerimientos.Location = new System.Drawing.Point(659, 133);
+            this.btn_deshabilitar_requerimientos.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btn_deshabilitar_requerimientos.Name = "btn_deshabilitar_requerimientos";
+            this.btn_deshabilitar_requerimientos.Size = new System.Drawing.Size(137, 43);
+            this.btn_deshabilitar_requerimientos.TabIndex = 37;
+            this.btn_deshabilitar_requerimientos.Text = "Deshabilitar";
+            this.btn_deshabilitar_requerimientos.UseVisualStyleBackColor = true;
+            // 
+            // btn_editar_requerimientos
+            // 
+            this.btn_editar_requerimientos.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_editar_requerimientos.Location = new System.Drawing.Point(659, 84);
+            this.btn_editar_requerimientos.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btn_editar_requerimientos.Name = "btn_editar_requerimientos";
+            this.btn_editar_requerimientos.Size = new System.Drawing.Size(137, 43);
+            this.btn_editar_requerimientos.TabIndex = 36;
+            this.btn_editar_requerimientos.Text = "Editar";
+            this.btn_editar_requerimientos.UseVisualStyleBackColor = true;
+            // 
+            // btn_nuevo_requerimientos
+            // 
+            this.btn_nuevo_requerimientos.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_nuevo_requerimientos.Location = new System.Drawing.Point(659, 35);
+            this.btn_nuevo_requerimientos.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btn_nuevo_requerimientos.Name = "btn_nuevo_requerimientos";
+            this.btn_nuevo_requerimientos.Size = new System.Drawing.Size(137, 43);
+            this.btn_nuevo_requerimientos.TabIndex = 35;
+            this.btn_nuevo_requerimientos.Text = "Nuevo";
+            this.btn_nuevo_requerimientos.UseVisualStyleBackColor = true;
+            // 
+            // dgv_requerimientos_mantenedor
+            // 
+            this.dgv_requerimientos_mantenedor.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgv_requerimientos_mantenedor.Location = new System.Drawing.Point(6, 1);
+            this.dgv_requerimientos_mantenedor.Name = "dgv_requerimientos_mantenedor";
+            this.dgv_requerimientos_mantenedor.RowHeadersWidth = 51;
+            this.dgv_requerimientos_mantenedor.RowTemplate.Height = 24;
+            this.dgv_requerimientos_mantenedor.Size = new System.Drawing.Size(611, 268);
+            this.dgv_requerimientos_mantenedor.TabIndex = 34;
+            // 
+            // gbx_datos_requerimientos
+            // 
+            this.gbx_datos_requerimientos.Controls.Add(this.cbk_estado_requerimientos);
+            this.gbx_datos_requerimientos.Controls.Add(this.dtp_reg_requerimientos);
+            this.gbx_datos_requerimientos.Controls.Add(this.txt_des_requerimientos);
+            this.gbx_datos_requerimientos.Controls.Add(this.txt_id_requerimientos);
+            this.gbx_datos_requerimientos.Controls.Add(this.label25);
+            this.gbx_datos_requerimientos.Controls.Add(this.label26);
+            this.gbx_datos_requerimientos.Controls.Add(this.label27);
+            this.gbx_datos_requerimientos.Controls.Add(this.btn_cancelar_requerimientos);
+            this.gbx_datos_requerimientos.Controls.Add(this.btn_AddMod_requerimientos);
+            this.gbx_datos_requerimientos.Location = new System.Drawing.Point(3, 271);
+            this.gbx_datos_requerimientos.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.gbx_datos_requerimientos.Name = "gbx_datos_requerimientos";
+            this.gbx_datos_requerimientos.Padding = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.gbx_datos_requerimientos.Size = new System.Drawing.Size(813, 188);
+            this.gbx_datos_requerimientos.TabIndex = 38;
+            this.gbx_datos_requerimientos.TabStop = false;
+            this.gbx_datos_requerimientos.Text = "Datos";
+            // 
+            // cbk_estado_requerimientos
+            // 
+            this.cbk_estado_requerimientos.AutoSize = true;
+            this.cbk_estado_requerimientos.Location = new System.Drawing.Point(525, 81);
+            this.cbk_estado_requerimientos.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.cbk_estado_requerimientos.Name = "cbk_estado_requerimientos";
+            this.cbk_estado_requerimientos.Size = new System.Drawing.Size(182, 20);
+            this.cbk_estado_requerimientos.TabIndex = 18;
+            this.cbk_estado_requerimientos.Text = "Estado de Requerimiento";
+            this.cbk_estado_requerimientos.UseVisualStyleBackColor = true;
+            // 
+            // dtp_reg_requerimientos
+            // 
+            this.dtp_reg_requerimientos.Location = new System.Drawing.Point(543, 36);
+            this.dtp_reg_requerimientos.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.dtp_reg_requerimientos.Name = "dtp_reg_requerimientos";
+            this.dtp_reg_requerimientos.Size = new System.Drawing.Size(264, 22);
+            this.dtp_reg_requerimientos.TabIndex = 17;
+            // 
+            // txt_des_requerimientos
+            // 
+            this.txt_des_requerimientos.Location = new System.Drawing.Point(10, 92);
+            this.txt_des_requerimientos.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.txt_des_requerimientos.Multiline = true;
+            this.txt_des_requerimientos.Name = "txt_des_requerimientos";
+            this.txt_des_requerimientos.Size = new System.Drawing.Size(459, 70);
+            this.txt_des_requerimientos.TabIndex = 14;
+            // 
+            // txt_id_requerimientos
+            // 
+            this.txt_id_requerimientos.Location = new System.Drawing.Point(40, 34);
+            this.txt_id_requerimientos.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.txt_id_requerimientos.Name = "txt_id_requerimientos";
+            this.txt_id_requerimientos.Size = new System.Drawing.Size(146, 22);
+            this.txt_id_requerimientos.TabIndex = 13;
+            // 
+            // label25
+            // 
+            this.label25.AutoSize = true;
+            this.label25.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label25.Location = new System.Drawing.Point(387, 38);
+            this.label25.Name = "label25";
+            this.label25.Size = new System.Drawing.Size(131, 20);
+            this.label25.TabIndex = 12;
+            this.label25.Text = "Fecha registro";
+            // 
+            // label26
+            // 
+            this.label26.AutoSize = true;
+            this.label26.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label26.Location = new System.Drawing.Point(6, 70);
+            this.label26.Name = "label26";
+            this.label26.Size = new System.Drawing.Size(140, 20);
+            this.label26.TabIndex = 9;
+            this.label26.Text = "Requerimientos";
+            this.label26.TextAlign = System.Drawing.ContentAlignment.TopRight;
+            // 
+            // label27
+            // 
+            this.label27.AutoSize = true;
+            this.label27.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label27.Location = new System.Drawing.Point(6, 34);
+            this.label27.Name = "label27";
+            this.label27.Size = new System.Drawing.Size(28, 20);
+            this.label27.TabIndex = 6;
+            this.label27.Text = "ID";
+            // 
+            // btn_cancelar_requerimientos
+            // 
+            this.btn_cancelar_requerimientos.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_cancelar_requerimientos.Location = new System.Drawing.Point(608, 119);
+            this.btn_cancelar_requerimientos.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btn_cancelar_requerimientos.Name = "btn_cancelar_requerimientos";
+            this.btn_cancelar_requerimientos.Size = new System.Drawing.Size(116, 43);
+            this.btn_cancelar_requerimientos.TabIndex = 7;
+            this.btn_cancelar_requerimientos.Text = "Cancelar";
+            this.btn_cancelar_requerimientos.UseVisualStyleBackColor = true;
+            // 
+            // btn_AddMod_requerimientos
+            // 
+            this.btn_AddMod_requerimientos.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_AddMod_requerimientos.Location = new System.Drawing.Point(486, 119);
+            this.btn_AddMod_requerimientos.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btn_AddMod_requerimientos.Name = "btn_AddMod_requerimientos";
+            this.btn_AddMod_requerimientos.Size = new System.Drawing.Size(116, 43);
+            this.btn_AddMod_requerimientos.TabIndex = 8;
+            this.btn_AddMod_requerimientos.Text = "---";
+            this.btn_AddMod_requerimientos.UseVisualStyleBackColor = true;
+            // 
             // tabPage5
             // 
             this.tabPage5.Controls.Add(this.btn_deshabilitar_gerente);
@@ -1254,172 +1186,6 @@
             this.dgv_jalmacen_mantenedor.Size = new System.Drawing.Size(611, 268);
             this.dgv_jalmacen_mantenedor.TabIndex = 38;
             // 
-            // tabPage7
-            // 
-            this.tabPage7.Controls.Add(this.btn_deshabilitar_requerimientos);
-            this.tabPage7.Controls.Add(this.btn_editar_requerimientos);
-            this.tabPage7.Controls.Add(this.btn_nuevo_requerimientos);
-            this.tabPage7.Controls.Add(this.dgv_requerimientos_mantenedor);
-            this.tabPage7.Controls.Add(this.gbx_datos_requerimientos);
-            this.tabPage7.Location = new System.Drawing.Point(4, 25);
-            this.tabPage7.Name = "tabPage7";
-            this.tabPage7.Size = new System.Drawing.Size(818, 460);
-            this.tabPage7.TabIndex = 6;
-            this.tabPage7.Text = "Requerimiento";
-            this.tabPage7.UseVisualStyleBackColor = true;
-            // 
-            // btn_deshabilitar_requerimientos
-            // 
-            this.btn_deshabilitar_requerimientos.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_deshabilitar_requerimientos.Location = new System.Drawing.Point(659, 133);
-            this.btn_deshabilitar_requerimientos.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.btn_deshabilitar_requerimientos.Name = "btn_deshabilitar_requerimientos";
-            this.btn_deshabilitar_requerimientos.Size = new System.Drawing.Size(137, 43);
-            this.btn_deshabilitar_requerimientos.TabIndex = 37;
-            this.btn_deshabilitar_requerimientos.Text = "Deshabilitar";
-            this.btn_deshabilitar_requerimientos.UseVisualStyleBackColor = true;
-            // 
-            // btn_editar_requerimientos
-            // 
-            this.btn_editar_requerimientos.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_editar_requerimientos.Location = new System.Drawing.Point(659, 84);
-            this.btn_editar_requerimientos.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.btn_editar_requerimientos.Name = "btn_editar_requerimientos";
-            this.btn_editar_requerimientos.Size = new System.Drawing.Size(137, 43);
-            this.btn_editar_requerimientos.TabIndex = 36;
-            this.btn_editar_requerimientos.Text = "Editar";
-            this.btn_editar_requerimientos.UseVisualStyleBackColor = true;
-            // 
-            // btn_nuevo_requerimientos
-            // 
-            this.btn_nuevo_requerimientos.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_nuevo_requerimientos.Location = new System.Drawing.Point(659, 35);
-            this.btn_nuevo_requerimientos.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.btn_nuevo_requerimientos.Name = "btn_nuevo_requerimientos";
-            this.btn_nuevo_requerimientos.Size = new System.Drawing.Size(137, 43);
-            this.btn_nuevo_requerimientos.TabIndex = 35;
-            this.btn_nuevo_requerimientos.Text = "Nuevo";
-            this.btn_nuevo_requerimientos.UseVisualStyleBackColor = true;
-            // 
-            // dgv_requerimientos_mantenedor
-            // 
-            this.dgv_requerimientos_mantenedor.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgv_requerimientos_mantenedor.Location = new System.Drawing.Point(6, 1);
-            this.dgv_requerimientos_mantenedor.Name = "dgv_requerimientos_mantenedor";
-            this.dgv_requerimientos_mantenedor.RowHeadersWidth = 51;
-            this.dgv_requerimientos_mantenedor.RowTemplate.Height = 24;
-            this.dgv_requerimientos_mantenedor.Size = new System.Drawing.Size(611, 268);
-            this.dgv_requerimientos_mantenedor.TabIndex = 34;
-            // 
-            // gbx_datos_requerimientos
-            // 
-            this.gbx_datos_requerimientos.Controls.Add(this.cbk_estado_requerimientos);
-            this.gbx_datos_requerimientos.Controls.Add(this.dtp_reg_requerimientos);
-            this.gbx_datos_requerimientos.Controls.Add(this.txt_des_requerimientos);
-            this.gbx_datos_requerimientos.Controls.Add(this.txt_id_requerimientos);
-            this.gbx_datos_requerimientos.Controls.Add(this.label25);
-            this.gbx_datos_requerimientos.Controls.Add(this.label26);
-            this.gbx_datos_requerimientos.Controls.Add(this.label27);
-            this.gbx_datos_requerimientos.Controls.Add(this.btn_cancelar_requerimientos);
-            this.gbx_datos_requerimientos.Controls.Add(this.btn_AddMod_requerimientos);
-            this.gbx_datos_requerimientos.Location = new System.Drawing.Point(3, 271);
-            this.gbx_datos_requerimientos.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.gbx_datos_requerimientos.Name = "gbx_datos_requerimientos";
-            this.gbx_datos_requerimientos.Padding = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.gbx_datos_requerimientos.Size = new System.Drawing.Size(813, 188);
-            this.gbx_datos_requerimientos.TabIndex = 38;
-            this.gbx_datos_requerimientos.TabStop = false;
-            this.gbx_datos_requerimientos.Text = "Datos";
-            // 
-            // cbk_estado_requerimientos
-            // 
-            this.cbk_estado_requerimientos.AutoSize = true;
-            this.cbk_estado_requerimientos.Location = new System.Drawing.Point(525, 81);
-            this.cbk_estado_requerimientos.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.cbk_estado_requerimientos.Name = "cbk_estado_requerimientos";
-            this.cbk_estado_requerimientos.Size = new System.Drawing.Size(182, 20);
-            this.cbk_estado_requerimientos.TabIndex = 18;
-            this.cbk_estado_requerimientos.Text = "Estado de Requerimiento";
-            this.cbk_estado_requerimientos.UseVisualStyleBackColor = true;
-            // 
-            // dtp_reg_requerimientos
-            // 
-            this.dtp_reg_requerimientos.Location = new System.Drawing.Point(543, 36);
-            this.dtp_reg_requerimientos.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.dtp_reg_requerimientos.Name = "dtp_reg_requerimientos";
-            this.dtp_reg_requerimientos.Size = new System.Drawing.Size(264, 22);
-            this.dtp_reg_requerimientos.TabIndex = 17;
-            // 
-            // txt_des_requerimientos
-            // 
-            this.txt_des_requerimientos.Location = new System.Drawing.Point(10, 92);
-            this.txt_des_requerimientos.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.txt_des_requerimientos.Multiline = true;
-            this.txt_des_requerimientos.Name = "txt_des_requerimientos";
-            this.txt_des_requerimientos.Size = new System.Drawing.Size(459, 70);
-            this.txt_des_requerimientos.TabIndex = 14;
-            // 
-            // txt_id_requerimientos
-            // 
-            this.txt_id_requerimientos.Location = new System.Drawing.Point(40, 34);
-            this.txt_id_requerimientos.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.txt_id_requerimientos.Name = "txt_id_requerimientos";
-            this.txt_id_requerimientos.Size = new System.Drawing.Size(146, 22);
-            this.txt_id_requerimientos.TabIndex = 13;
-            // 
-            // label25
-            // 
-            this.label25.AutoSize = true;
-            this.label25.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label25.Location = new System.Drawing.Point(387, 38);
-            this.label25.Name = "label25";
-            this.label25.Size = new System.Drawing.Size(131, 20);
-            this.label25.TabIndex = 12;
-            this.label25.Text = "Fecha registro";
-            // 
-            // label26
-            // 
-            this.label26.AutoSize = true;
-            this.label26.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label26.Location = new System.Drawing.Point(6, 70);
-            this.label26.Name = "label26";
-            this.label26.Size = new System.Drawing.Size(140, 20);
-            this.label26.TabIndex = 9;
-            this.label26.Text = "Requerimientos";
-            this.label26.TextAlign = System.Drawing.ContentAlignment.TopRight;
-            // 
-            // label27
-            // 
-            this.label27.AutoSize = true;
-            this.label27.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label27.Location = new System.Drawing.Point(6, 34);
-            this.label27.Name = "label27";
-            this.label27.Size = new System.Drawing.Size(28, 20);
-            this.label27.TabIndex = 6;
-            this.label27.Text = "ID";
-            // 
-            // btn_cancelar_requerimientos
-            // 
-            this.btn_cancelar_requerimientos.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_cancelar_requerimientos.Location = new System.Drawing.Point(608, 119);
-            this.btn_cancelar_requerimientos.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.btn_cancelar_requerimientos.Name = "btn_cancelar_requerimientos";
-            this.btn_cancelar_requerimientos.Size = new System.Drawing.Size(116, 43);
-            this.btn_cancelar_requerimientos.TabIndex = 7;
-            this.btn_cancelar_requerimientos.Text = "Cancelar";
-            this.btn_cancelar_requerimientos.UseVisualStyleBackColor = true;
-            // 
-            // btn_AddMod_requerimientos
-            // 
-            this.btn_AddMod_requerimientos.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_AddMod_requerimientos.Location = new System.Drawing.Point(486, 119);
-            this.btn_AddMod_requerimientos.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.btn_AddMod_requerimientos.Name = "btn_AddMod_requerimientos";
-            this.btn_AddMod_requerimientos.Size = new System.Drawing.Size(116, 43);
-            this.btn_AddMod_requerimientos.TabIndex = 8;
-            this.btn_AddMod_requerimientos.Text = "---";
-            this.btn_AddMod_requerimientos.UseVisualStyleBackColor = true;
-            // 
             // FormsMantenedores
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -1429,10 +1195,6 @@
             this.Name = "FormsMantenedores";
             this.Text = "MANTENEDORES";
             this.tabControl1.ResumeLayout(false);
-            this.tabPage1.ResumeLayout(false);
-            this.gbx_datosprov.ResumeLayout(false);
-            this.gbx_datosprov.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dgv_proveedor_mantenedor)).EndInit();
             this.tabPage2.ResumeLayout(false);
             this.grp_datos_cliente.ResumeLayout(false);
             this.grp_datos_cliente.PerformLayout();
@@ -1445,6 +1207,10 @@
             this.grp_datos_vendedor.ResumeLayout(false);
             this.grp_datos_vendedor.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgv_vendedor_mantenedor)).EndInit();
+            this.tabPage7.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.dgv_requerimientos_mantenedor)).EndInit();
+            this.gbx_datos_requerimientos.ResumeLayout(false);
+            this.gbx_datos_requerimientos.PerformLayout();
             this.tabPage5.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dgv_gerente_mantenedor)).EndInit();
             this.gbx_datos_gerente.ResumeLayout(false);
@@ -1453,10 +1219,6 @@
             this.gbx_datos_jalmacen.ResumeLayout(false);
             this.gbx_datos_jalmacen.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgv_jalmacen_mantenedor)).EndInit();
-            this.tabPage7.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.dgv_requerimientos_mantenedor)).EndInit();
-            this.gbx_datos_requerimientos.ResumeLayout(false);
-            this.gbx_datos_requerimientos.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -1464,29 +1226,10 @@
         #endregion
 
         private System.Windows.Forms.TabControl tabControl1;
-        private System.Windows.Forms.TabPage tabPage1;
         private System.Windows.Forms.TabPage tabPage2;
         private System.Windows.Forms.TabPage tabPage3;
         private System.Windows.Forms.TabPage tabPage4;
-        private System.Windows.Forms.DataGridView dgv_proveedor_mantenedor;
         private System.Windows.Forms.DataGridView dtv_cliente_mantenedor;
-        private System.Windows.Forms.Button btn_deshabilitar_proveedor;
-        private System.Windows.Forms.Button btn_editar_proveedor;
-        private System.Windows.Forms.Button btn_nuevo_proveedor;
-        private System.Windows.Forms.GroupBox gbx_datosprov;
-        private System.Windows.Forms.CheckBox cbk_Estado_Cliente;
-        private System.Windows.Forms.DateTimePicker dtPickerRegCliente;
-        private System.Windows.Forms.TextBox txt_id_Ciudad;
-        private System.Windows.Forms.TextBox txt_id_TipoCliente;
-        private System.Windows.Forms.TextBox txt_Razon_Social;
-        private System.Windows.Forms.TextBox txt_id_proveedor;
-        private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Button btn_cancelar_proveedor;
-        private System.Windows.Forms.Button btn_AddMod_proveedor;
         private System.Windows.Forms.Button btn_deshabilitar_cliente;
         private System.Windows.Forms.Button btn_editar_cliente;
         private System.Windows.Forms.Button btn_nuevo_cliente;

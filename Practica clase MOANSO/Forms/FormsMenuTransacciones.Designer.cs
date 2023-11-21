@@ -34,11 +34,6 @@
             this.btn_anular_transventa = new System.Windows.Forms.Button();
             this.btn_nuevo_transventa = new System.Windows.Forms.Button();
             this.dtg_transaccion_venta = new System.Windows.Forms.DataGridView();
-            this.tabPage2 = new System.Windows.Forms.TabPage();
-            this.panel2 = new System.Windows.Forms.Panel();
-            this.btn_anular_transcompra = new System.Windows.Forms.Button();
-            this.btn_nuevo_transcompra = new System.Windows.Forms.Button();
-            this.dtg_transaccion_compra = new System.Windows.Forms.DataGridView();
             this.tabPage3 = new System.Windows.Forms.TabPage();
             this.panel3 = new System.Windows.Forms.Panel();
             this.btn_anular_transST = new System.Windows.Forms.Button();
@@ -48,9 +43,6 @@
             this.tabPage1.SuspendLayout();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dtg_transaccion_venta)).BeginInit();
-            this.tabPage2.SuspendLayout();
-            this.panel2.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dtg_transaccion_compra)).BeginInit();
             this.tabPage3.SuspendLayout();
             this.panel3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dtg_transaccion_ST)).BeginInit();
@@ -59,7 +51,6 @@
             // tabControl1
             // 
             this.tabControl1.Controls.Add(this.tabPage1);
-            this.tabControl1.Controls.Add(this.tabPage2);
             this.tabControl1.Controls.Add(this.tabPage3);
             this.tabControl1.Location = new System.Drawing.Point(2, 3);
             this.tabControl1.Name = "tabControl1";
@@ -118,58 +109,6 @@
             this.dtg_transaccion_venta.RowTemplate.Height = 24;
             this.dtg_transaccion_venta.Size = new System.Drawing.Size(540, 431);
             this.dtg_transaccion_venta.TabIndex = 0;
-            // 
-            // tabPage2
-            // 
-            this.tabPage2.Controls.Add(this.panel2);
-            this.tabPage2.Controls.Add(this.dtg_transaccion_compra);
-            this.tabPage2.Location = new System.Drawing.Point(4, 25);
-            this.tabPage2.Name = "tabPage2";
-            this.tabPage2.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage2.Size = new System.Drawing.Size(818, 460);
-            this.tabPage2.TabIndex = 1;
-            this.tabPage2.Text = "Compra";
-            this.tabPage2.UseVisualStyleBackColor = true;
-            // 
-            // panel2
-            // 
-            this.panel2.Controls.Add(this.btn_anular_transcompra);
-            this.panel2.Controls.Add(this.btn_nuevo_transcompra);
-            this.panel2.Location = new System.Drawing.Point(574, 113);
-            this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(200, 233);
-            this.panel2.TabIndex = 1;
-            // 
-            // btn_anular_transcompra
-            // 
-            this.btn_anular_transcompra.Dock = System.Windows.Forms.DockStyle.Top;
-            this.btn_anular_transcompra.Location = new System.Drawing.Point(0, 111);
-            this.btn_anular_transcompra.Name = "btn_anular_transcompra";
-            this.btn_anular_transcompra.Size = new System.Drawing.Size(200, 111);
-            this.btn_anular_transcompra.TabIndex = 1;
-            this.btn_anular_transcompra.Text = "Anular";
-            this.btn_anular_transcompra.UseVisualStyleBackColor = true;
-            // 
-            // btn_nuevo_transcompra
-            // 
-            this.btn_nuevo_transcompra.Dock = System.Windows.Forms.DockStyle.Top;
-            this.btn_nuevo_transcompra.Location = new System.Drawing.Point(0, 0);
-            this.btn_nuevo_transcompra.Name = "btn_nuevo_transcompra";
-            this.btn_nuevo_transcompra.Size = new System.Drawing.Size(200, 111);
-            this.btn_nuevo_transcompra.TabIndex = 0;
-            this.btn_nuevo_transcompra.Text = "Nuevo";
-            this.btn_nuevo_transcompra.UseVisualStyleBackColor = true;
-            this.btn_nuevo_transcompra.Click += new System.EventHandler(this.btn_nuevo_transcompra_Click);
-            // 
-            // dtg_transaccion_compra
-            // 
-            this.dtg_transaccion_compra.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dtg_transaccion_compra.Location = new System.Drawing.Point(6, 6);
-            this.dtg_transaccion_compra.Name = "dtg_transaccion_compra";
-            this.dtg_transaccion_compra.RowHeadersWidth = 51;
-            this.dtg_transaccion_compra.RowTemplate.Height = 24;
-            this.dtg_transaccion_compra.Size = new System.Drawing.Size(540, 431);
-            this.dtg_transaccion_compra.TabIndex = 0;
             // 
             // tabPage3
             // 
@@ -235,9 +174,6 @@
             this.tabPage1.ResumeLayout(false);
             this.panel1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dtg_transaccion_venta)).EndInit();
-            this.tabPage2.ResumeLayout(false);
-            this.panel2.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.dtg_transaccion_compra)).EndInit();
             this.tabPage3.ResumeLayout(false);
             this.panel3.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dtg_transaccion_ST)).EndInit();
@@ -249,16 +185,11 @@
 
         private System.Windows.Forms.TabControl tabControl1;
         private System.Windows.Forms.TabPage tabPage1;
-        private System.Windows.Forms.TabPage tabPage2;
         private System.Windows.Forms.TabPage tabPage3;
         private System.Windows.Forms.Button btn_nuevo_transventa;
         private System.Windows.Forms.DataGridView dtg_transaccion_venta;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Button btn_anular_transventa;
-        private System.Windows.Forms.Panel panel2;
-        private System.Windows.Forms.Button btn_anular_transcompra;
-        private System.Windows.Forms.Button btn_nuevo_transcompra;
-        private System.Windows.Forms.DataGridView dtg_transaccion_compra;
         private System.Windows.Forms.DataGridView dtg_transaccion_ST;
         private System.Windows.Forms.Panel panel3;
         private System.Windows.Forms.Button btn_anular_transST;

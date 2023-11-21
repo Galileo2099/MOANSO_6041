@@ -22,11 +22,6 @@ namespace Practica_clase_MOANSO
             Form formulario = new FormsTransaccionVenta();
             formulario.Show();
         }
-        private void btn_nuevo_transcompra_Click(object sender, EventArgs e)
-        {
-            Form formulario = new FormsTransaccionCompra();
-            formulario.Show();
-        }
         private void btn_nuevo_transST_Click(object sender, EventArgs e)
         {
             Form formulario = new FormsTransaccionServicioTecnico();

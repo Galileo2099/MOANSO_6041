@@ -39,11 +39,6 @@
             this.btn_eliminar_reportesalida = new System.Windows.Forms.Button();
             this.btn_nuevo_reportesalida = new System.Windows.Forms.Button();
             this.dgv_reportersalida = new System.Windows.Forms.DataGridView();
-            this.tabPage4 = new System.Windows.Forms.TabPage();
-            this.panel4 = new System.Windows.Forms.Panel();
-            this.btn_eliminar_reportercotizacion = new System.Windows.Forms.Button();
-            this.btn_nuevo_reportercotizacion = new System.Windows.Forms.Button();
-            this.dgv_reportercotizacion = new System.Windows.Forms.DataGridView();
             this.tabPage7 = new System.Windows.Forms.TabPage();
             this.panel7 = new System.Windows.Forms.Panel();
             this.btn_eliminar_reporterpedidoproducto = new System.Windows.Forms.Button();
@@ -56,9 +51,6 @@
             this.tabPage2.SuspendLayout();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgv_reportersalida)).BeginInit();
-            this.tabPage4.SuspendLayout();
-            this.panel4.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dgv_reportercotizacion)).BeginInit();
             this.tabPage7.SuspendLayout();
             this.panel7.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgv_pedidoproducto)).BeginInit();
@@ -66,10 +58,9 @@
             // 
             // tabControl1
             // 
-            this.tabControl1.Controls.Add(this.tabPage1);
-            this.tabControl1.Controls.Add(this.tabPage2);
-            this.tabControl1.Controls.Add(this.tabPage4);
             this.tabControl1.Controls.Add(this.tabPage7);
+            this.tabControl1.Controls.Add(this.tabPage2);
+            this.tabControl1.Controls.Add(this.tabPage1);
             this.tabControl1.Location = new System.Drawing.Point(0, 0);
             this.tabControl1.Name = "tabControl1";
             this.tabControl1.SelectedIndex = 0;
@@ -180,57 +171,6 @@
             this.dgv_reportersalida.Size = new System.Drawing.Size(490, 448);
             this.dgv_reportersalida.TabIndex = 0;
             // 
-            // tabPage4
-            // 
-            this.tabPage4.Controls.Add(this.panel4);
-            this.tabPage4.Controls.Add(this.dgv_reportercotizacion);
-            this.tabPage4.Location = new System.Drawing.Point(4, 25);
-            this.tabPage4.Name = "tabPage4";
-            this.tabPage4.Size = new System.Drawing.Size(818, 460);
-            this.tabPage4.TabIndex = 3;
-            this.tabPage4.Text = "Cotización";
-            this.tabPage4.UseVisualStyleBackColor = true;
-            // 
-            // panel4
-            // 
-            this.panel4.Controls.Add(this.btn_eliminar_reportercotizacion);
-            this.panel4.Controls.Add(this.btn_nuevo_reportercotizacion);
-            this.panel4.Location = new System.Drawing.Point(574, 113);
-            this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(200, 233);
-            this.panel4.TabIndex = 1;
-            // 
-            // btn_eliminar_reportercotizacion
-            // 
-            this.btn_eliminar_reportercotizacion.Dock = System.Windows.Forms.DockStyle.Top;
-            this.btn_eliminar_reportercotizacion.Location = new System.Drawing.Point(0, 111);
-            this.btn_eliminar_reportercotizacion.Name = "btn_eliminar_reportercotizacion";
-            this.btn_eliminar_reportercotizacion.Size = new System.Drawing.Size(200, 111);
-            this.btn_eliminar_reportercotizacion.TabIndex = 1;
-            this.btn_eliminar_reportercotizacion.Text = "Eliminiar";
-            this.btn_eliminar_reportercotizacion.UseVisualStyleBackColor = true;
-            // 
-            // btn_nuevo_reportercotizacion
-            // 
-            this.btn_nuevo_reportercotizacion.Dock = System.Windows.Forms.DockStyle.Top;
-            this.btn_nuevo_reportercotizacion.Location = new System.Drawing.Point(0, 0);
-            this.btn_nuevo_reportercotizacion.Name = "btn_nuevo_reportercotizacion";
-            this.btn_nuevo_reportercotizacion.Size = new System.Drawing.Size(200, 111);
-            this.btn_nuevo_reportercotizacion.TabIndex = 0;
-            this.btn_nuevo_reportercotizacion.Text = "Nuevo";
-            this.btn_nuevo_reportercotizacion.UseVisualStyleBackColor = true;
-            this.btn_nuevo_reportercotizacion.Click += new System.EventHandler(this.btn_nuevo_reportercotizacion_Click);
-            // 
-            // dgv_reportercotizacion
-            // 
-            this.dgv_reportercotizacion.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgv_reportercotizacion.Location = new System.Drawing.Point(6, 6);
-            this.dgv_reportercotizacion.Name = "dgv_reportercotizacion";
-            this.dgv_reportercotizacion.RowHeadersWidth = 51;
-            this.dgv_reportercotizacion.RowTemplate.Height = 24;
-            this.dgv_reportercotizacion.Size = new System.Drawing.Size(490, 448);
-            this.dgv_reportercotizacion.TabIndex = 0;
-            // 
             // tabPage7
             // 
             this.tabPage7.Controls.Add(this.panel7);
@@ -297,9 +237,6 @@
             this.tabPage2.ResumeLayout(false);
             this.panel1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dgv_reportersalida)).EndInit();
-            this.tabPage4.ResumeLayout(false);
-            this.panel4.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.dgv_reportercotizacion)).EndInit();
             this.tabPage7.ResumeLayout(false);
             this.panel7.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dgv_pedidoproducto)).EndInit();
@@ -320,11 +257,6 @@
         private System.Windows.Forms.Button btn_eliminar_reporteingreso;
         private System.Windows.Forms.Button btn_eliminar_reportesalida;
         private System.Windows.Forms.Button btn_nuevo_reportesalida;
-        private System.Windows.Forms.TabPage tabPage4;
-        private System.Windows.Forms.DataGridView dgv_reportercotizacion;
-        private System.Windows.Forms.Panel panel4;
-        private System.Windows.Forms.Button btn_eliminar_reportercotizacion;
-        private System.Windows.Forms.Button btn_nuevo_reportercotizacion;
         private System.Windows.Forms.TabPage tabPage7;
         private System.Windows.Forms.Panel panel7;
         private System.Windows.Forms.Button btn_eliminar_reporterpedidoproducto;
