@@ -7,10 +7,8 @@ using CapaEntidad;
 using CapaDatos;
 
 
-namespace CapaLogica
-{
-    public class logCliente
-    {
+namespace CapaLogica{
+    public class logCliente{
         #region sigleton
         //Patron Singleton
         // Variable estática para la instancia

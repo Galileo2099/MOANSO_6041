@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Practica_clase_MOANSO.Formularios;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
@@ -16,7 +17,7 @@ namespace Practica_clase_MOANSO
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new FormularioMantenedorCliente());
+            Application.Run(new FormsMenu());
         }
     }
 }

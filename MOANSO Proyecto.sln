@@ -3,13 +3,13 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.7.34031.279
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CapaPresentacionProveedor", "Practica clase MOANSO\CapaPresentacionProveedor.csproj", "{1536B35F-F7FA-47FA-8663-85331EE7BB07}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CapaPresentacion", "Practica clase MOANSO\CapaPresentacion.csproj", "{1536B35F-F7FA-47FA-8663-85331EE7BB07}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CapaDatos_Proveedor", "CapaDatos\CapaDatos_Proveedor.csproj", "{B8DBD623-3132-479E-B611-7576D334BB6D}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CapaDatos", "CapaDatos\CapaDatos.csproj", "{B8DBD623-3132-479E-B611-7576D334BB6D}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CapaEntidad_Proveedor", "CapaEntidad\CapaEntidad_Proveedor.csproj", "{5B666CA2-AE5C-449D-89F0-A96661442134}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CapaEntidad", "CapaEntidad\CapaEntidad.csproj", "{5B666CA2-AE5C-449D-89F0-A96661442134}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CapaLogica_Proveedor_RD", "CapaLogica\CapaLogica_Proveedor_RD.csproj", "{72062D04-0676-4305-9F5D-FBD8EB515426}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CapaLogica", "CapaLogica\CapaLogica.csproj", "{72062D04-0676-4305-9F5D-FBD8EB515426}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

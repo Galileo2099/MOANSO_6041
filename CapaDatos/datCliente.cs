@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+//llamada a capaentidad, bibliteca data y data.sqlclient
 using CapaEntidad;
 using System.Data;
 using System.Data.SqlClient;
@@ -40,38 +41,31 @@ namespace CapaDatos
                     entCliente Cli = new entCliente();
                     Cli.idCliente = Convert.ToInt32(dr["idCliente"]);
                     Cli.razonSocial = dr["razonSocial"].ToString();
-                    Cli.idTipoCliente = Convert.ToInt32(dr["idTipoCliente"].ToString());
+                    Cli.Numero = Convert.ToInt32(dr["Numero"].ToString());
                     Cli.fecRegCliente = Convert.ToDateTime(dr["fecRegCliente"]);
                     Cli.idCiudad = Convert.ToInt32(dr["idCiudad"].ToString());
                     Cli.estCliente = Convert.ToBoolean(dr["estCliente"]);
                     lista.Add(Cli);
                 }
-
             }catch (Exception e){
-
                 throw e;
-
             }finally{
-
                 cmd.Connection.Close();
-
             }
             return lista;
         }   
 
         //InsertaCliente
         public Boolean InsertarCliente(entCliente Cli){
-
             SqlCommand cmd = null;
             Boolean inserta = false;
-
             try{
 
-                SqlConnection cn = Conexion.Instancia.Conectar();
+                SqlConnection cn = Conexion.Instancia.Conectar(); //instancia por singleton
                 cmd = new SqlCommand("spInsertaCliente", cn);
                 cmd.CommandType = CommandType.StoredProcedure;
                 cmd.Parameters.AddWithValue("@razonSocial", Cli.razonSocial);
-                cmd.Parameters.AddWithValue("@idTipoCliente", Cli.idTipoCliente);
+                cmd.Parameters.AddWithValue("@Numero", Cli.Numero);
                 cmd.Parameters.AddWithValue("@fecRegCliente", Cli.fecRegCliente);
                 cmd.Parameters.AddWithValue("@idCiudad", Cli.idCiudad);
                 cmd.Parameters.AddWithValue("@estCliente", Cli.estCliente);
@@ -84,14 +78,10 @@ namespace CapaDatos
                 }
             }
             catch (Exception e){
-
                 throw e;
-
             }
-
             finally { cmd.Connection.Close(); }
             return inserta;
-
         }
 
         //Edita Cliente
@@ -104,7 +94,7 @@ namespace CapaDatos
                 cmd.CommandType = CommandType.StoredProcedure;
                 cmd.Parameters.AddWithValue("@idCliente", Cli.idCliente);
                 cmd.Parameters.AddWithValue("@razonSocial", Cli.razonSocial);
-                cmd.Parameters.AddWithValue("@idTipoCliente", Cli.idTipoCliente);
+                cmd.Parameters.AddWithValue("@Numero", Cli.Numero);
                 cmd.Parameters.AddWithValue("@fecRegCliente", Cli.fecRegCliente);
                 cmd.Parameters.AddWithValue("@idCiudad", Cli.idCiudad);
                 cmd.Parameters.AddWithValue("@estCliente", Cli.estCliente);
