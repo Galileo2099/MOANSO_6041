@@ -78,21 +78,6 @@
             this.btn_editar_vendedor = new System.Windows.Forms.Button();
             this.btn_nuevo_vendedor = new System.Windows.Forms.Button();
             this.dgv_vendedor_mantenedor = new System.Windows.Forms.DataGridView();
-            this.tabPage7 = new System.Windows.Forms.TabPage();
-            this.btn_deshabilitar_requerimientos = new System.Windows.Forms.Button();
-            this.btn_editar_requerimientos = new System.Windows.Forms.Button();
-            this.btn_nuevo_requerimientos = new System.Windows.Forms.Button();
-            this.dgv_requerimientos_mantenedor = new System.Windows.Forms.DataGridView();
-            this.gbx_datos_requerimientos = new System.Windows.Forms.GroupBox();
-            this.cbk_estado_requerimientos = new System.Windows.Forms.CheckBox();
-            this.dtp_reg_requerimientos = new System.Windows.Forms.DateTimePicker();
-            this.txt_des_requerimientos = new System.Windows.Forms.TextBox();
-            this.txt_id_requerimientos = new System.Windows.Forms.TextBox();
-            this.label25 = new System.Windows.Forms.Label();
-            this.label26 = new System.Windows.Forms.Label();
-            this.label27 = new System.Windows.Forms.Label();
-            this.btn_cancelar_requerimientos = new System.Windows.Forms.Button();
-            this.btn_AddMod_requerimientos = new System.Windows.Forms.Button();
             this.tabPage5 = new System.Windows.Forms.TabPage();
             this.btn_deshabilitar_gerente = new System.Windows.Forms.Button();
             this.btn_editar_gerente = new System.Windows.Forms.Button();
@@ -137,9 +122,6 @@
             this.tabPage4.SuspendLayout();
             this.grp_datos_vendedor.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgv_vendedor_mantenedor)).BeginInit();
-            this.tabPage7.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dgv_requerimientos_mantenedor)).BeginInit();
-            this.gbx_datos_requerimientos.SuspendLayout();
             this.tabPage5.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgv_gerente_mantenedor)).BeginInit();
             this.gbx_datos_gerente.SuspendLayout();
@@ -153,7 +135,6 @@
             this.tabControl1.Controls.Add(this.tabPage2);
             this.tabControl1.Controls.Add(this.tabPage3);
             this.tabControl1.Controls.Add(this.tabPage4);
-            this.tabControl1.Controls.Add(this.tabPage7);
             this.tabControl1.Controls.Add(this.tabPage5);
             this.tabControl1.Controls.Add(this.tabPage6);
             this.tabControl1.Location = new System.Drawing.Point(3, 1);
@@ -648,172 +629,6 @@
             this.dgv_vendedor_mantenedor.Size = new System.Drawing.Size(611, 268);
             this.dgv_vendedor_mantenedor.TabIndex = 0;
             // 
-            // tabPage7
-            // 
-            this.tabPage7.Controls.Add(this.btn_deshabilitar_requerimientos);
-            this.tabPage7.Controls.Add(this.btn_editar_requerimientos);
-            this.tabPage7.Controls.Add(this.btn_nuevo_requerimientos);
-            this.tabPage7.Controls.Add(this.dgv_requerimientos_mantenedor);
-            this.tabPage7.Controls.Add(this.gbx_datos_requerimientos);
-            this.tabPage7.Location = new System.Drawing.Point(4, 25);
-            this.tabPage7.Name = "tabPage7";
-            this.tabPage7.Size = new System.Drawing.Size(818, 460);
-            this.tabPage7.TabIndex = 6;
-            this.tabPage7.Text = "Requerimiento";
-            this.tabPage7.UseVisualStyleBackColor = true;
-            // 
-            // btn_deshabilitar_requerimientos
-            // 
-            this.btn_deshabilitar_requerimientos.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_deshabilitar_requerimientos.Location = new System.Drawing.Point(659, 133);
-            this.btn_deshabilitar_requerimientos.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.btn_deshabilitar_requerimientos.Name = "btn_deshabilitar_requerimientos";
-            this.btn_deshabilitar_requerimientos.Size = new System.Drawing.Size(137, 43);
-            this.btn_deshabilitar_requerimientos.TabIndex = 37;
-            this.btn_deshabilitar_requerimientos.Text = "Deshabilitar";
-            this.btn_deshabilitar_requerimientos.UseVisualStyleBackColor = true;
-            // 
-            // btn_editar_requerimientos
-            // 
-            this.btn_editar_requerimientos.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_editar_requerimientos.Location = new System.Drawing.Point(659, 84);
-            this.btn_editar_requerimientos.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.btn_editar_requerimientos.Name = "btn_editar_requerimientos";
-            this.btn_editar_requerimientos.Size = new System.Drawing.Size(137, 43);
-            this.btn_editar_requerimientos.TabIndex = 36;
-            this.btn_editar_requerimientos.Text = "Editar";
-            this.btn_editar_requerimientos.UseVisualStyleBackColor = true;
-            // 
-            // btn_nuevo_requerimientos
-            // 
-            this.btn_nuevo_requerimientos.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_nuevo_requerimientos.Location = new System.Drawing.Point(659, 35);
-            this.btn_nuevo_requerimientos.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.btn_nuevo_requerimientos.Name = "btn_nuevo_requerimientos";
-            this.btn_nuevo_requerimientos.Size = new System.Drawing.Size(137, 43);
-            this.btn_nuevo_requerimientos.TabIndex = 35;
-            this.btn_nuevo_requerimientos.Text = "Nuevo";
-            this.btn_nuevo_requerimientos.UseVisualStyleBackColor = true;
-            // 
-            // dgv_requerimientos_mantenedor
-            // 
-            this.dgv_requerimientos_mantenedor.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgv_requerimientos_mantenedor.Location = new System.Drawing.Point(6, 1);
-            this.dgv_requerimientos_mantenedor.Name = "dgv_requerimientos_mantenedor";
-            this.dgv_requerimientos_mantenedor.RowHeadersWidth = 51;
-            this.dgv_requerimientos_mantenedor.RowTemplate.Height = 24;
-            this.dgv_requerimientos_mantenedor.Size = new System.Drawing.Size(611, 268);
-            this.dgv_requerimientos_mantenedor.TabIndex = 34;
-            // 
-            // gbx_datos_requerimientos
-            // 
-            this.gbx_datos_requerimientos.Controls.Add(this.cbk_estado_requerimientos);
-            this.gbx_datos_requerimientos.Controls.Add(this.dtp_reg_requerimientos);
-            this.gbx_datos_requerimientos.Controls.Add(this.txt_des_requerimientos);
-            this.gbx_datos_requerimientos.Controls.Add(this.txt_id_requerimientos);
-            this.gbx_datos_requerimientos.Controls.Add(this.label25);
-            this.gbx_datos_requerimientos.Controls.Add(this.label26);
-            this.gbx_datos_requerimientos.Controls.Add(this.label27);
-            this.gbx_datos_requerimientos.Controls.Add(this.btn_cancelar_requerimientos);
-            this.gbx_datos_requerimientos.Controls.Add(this.btn_AddMod_requerimientos);
-            this.gbx_datos_requerimientos.Location = new System.Drawing.Point(3, 271);
-            this.gbx_datos_requerimientos.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.gbx_datos_requerimientos.Name = "gbx_datos_requerimientos";
-            this.gbx_datos_requerimientos.Padding = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.gbx_datos_requerimientos.Size = new System.Drawing.Size(813, 188);
-            this.gbx_datos_requerimientos.TabIndex = 38;
-            this.gbx_datos_requerimientos.TabStop = false;
-            this.gbx_datos_requerimientos.Text = "Datos";
-            // 
-            // cbk_estado_requerimientos
-            // 
-            this.cbk_estado_requerimientos.AutoSize = true;
-            this.cbk_estado_requerimientos.Location = new System.Drawing.Point(525, 81);
-            this.cbk_estado_requerimientos.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.cbk_estado_requerimientos.Name = "cbk_estado_requerimientos";
-            this.cbk_estado_requerimientos.Size = new System.Drawing.Size(182, 20);
-            this.cbk_estado_requerimientos.TabIndex = 18;
-            this.cbk_estado_requerimientos.Text = "Estado de Requerimiento";
-            this.cbk_estado_requerimientos.UseVisualStyleBackColor = true;
-            // 
-            // dtp_reg_requerimientos
-            // 
-            this.dtp_reg_requerimientos.Location = new System.Drawing.Point(543, 36);
-            this.dtp_reg_requerimientos.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.dtp_reg_requerimientos.Name = "dtp_reg_requerimientos";
-            this.dtp_reg_requerimientos.Size = new System.Drawing.Size(264, 22);
-            this.dtp_reg_requerimientos.TabIndex = 17;
-            // 
-            // txt_des_requerimientos
-            // 
-            this.txt_des_requerimientos.Location = new System.Drawing.Point(10, 92);
-            this.txt_des_requerimientos.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.txt_des_requerimientos.Multiline = true;
-            this.txt_des_requerimientos.Name = "txt_des_requerimientos";
-            this.txt_des_requerimientos.Size = new System.Drawing.Size(459, 70);
-            this.txt_des_requerimientos.TabIndex = 14;
-            // 
-            // txt_id_requerimientos
-            // 
-            this.txt_id_requerimientos.Location = new System.Drawing.Point(40, 34);
-            this.txt_id_requerimientos.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.txt_id_requerimientos.Name = "txt_id_requerimientos";
-            this.txt_id_requerimientos.Size = new System.Drawing.Size(146, 22);
-            this.txt_id_requerimientos.TabIndex = 13;
-            // 
-            // label25
-            // 
-            this.label25.AutoSize = true;
-            this.label25.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label25.Location = new System.Drawing.Point(387, 38);
-            this.label25.Name = "label25";
-            this.label25.Size = new System.Drawing.Size(131, 20);
-            this.label25.TabIndex = 12;
-            this.label25.Text = "Fecha registro";
-            // 
-            // label26
-            // 
-            this.label26.AutoSize = true;
-            this.label26.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label26.Location = new System.Drawing.Point(6, 70);
-            this.label26.Name = "label26";
-            this.label26.Size = new System.Drawing.Size(140, 20);
-            this.label26.TabIndex = 9;
-            this.label26.Text = "Requerimientos";
-            this.label26.TextAlign = System.Drawing.ContentAlignment.TopRight;
-            // 
-            // label27
-            // 
-            this.label27.AutoSize = true;
-            this.label27.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label27.Location = new System.Drawing.Point(6, 34);
-            this.label27.Name = "label27";
-            this.label27.Size = new System.Drawing.Size(28, 20);
-            this.label27.TabIndex = 6;
-            this.label27.Text = "ID";
-            // 
-            // btn_cancelar_requerimientos
-            // 
-            this.btn_cancelar_requerimientos.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_cancelar_requerimientos.Location = new System.Drawing.Point(608, 119);
-            this.btn_cancelar_requerimientos.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.btn_cancelar_requerimientos.Name = "btn_cancelar_requerimientos";
-            this.btn_cancelar_requerimientos.Size = new System.Drawing.Size(116, 43);
-            this.btn_cancelar_requerimientos.TabIndex = 7;
-            this.btn_cancelar_requerimientos.Text = "Cancelar";
-            this.btn_cancelar_requerimientos.UseVisualStyleBackColor = true;
-            // 
-            // btn_AddMod_requerimientos
-            // 
-            this.btn_AddMod_requerimientos.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_AddMod_requerimientos.Location = new System.Drawing.Point(486, 119);
-            this.btn_AddMod_requerimientos.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.btn_AddMod_requerimientos.Name = "btn_AddMod_requerimientos";
-            this.btn_AddMod_requerimientos.Size = new System.Drawing.Size(116, 43);
-            this.btn_AddMod_requerimientos.TabIndex = 8;
-            this.btn_AddMod_requerimientos.Text = "---";
-            this.btn_AddMod_requerimientos.UseVisualStyleBackColor = true;
-            // 
             // tabPage5
             // 
             this.tabPage5.Controls.Add(this.btn_deshabilitar_gerente);
@@ -1207,10 +1022,6 @@
             this.grp_datos_vendedor.ResumeLayout(false);
             this.grp_datos_vendedor.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgv_vendedor_mantenedor)).EndInit();
-            this.tabPage7.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.dgv_requerimientos_mantenedor)).EndInit();
-            this.gbx_datos_requerimientos.ResumeLayout(false);
-            this.gbx_datos_requerimientos.PerformLayout();
             this.tabPage5.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dgv_gerente_mantenedor)).EndInit();
             this.gbx_datos_gerente.ResumeLayout(false);
@@ -1309,20 +1120,5 @@
         private System.Windows.Forms.Label label24;
         private System.Windows.Forms.Button btn_cancelar_gerente;
         private System.Windows.Forms.Button btn_AddMod_gerente;
-        private System.Windows.Forms.TabPage tabPage7;
-        private System.Windows.Forms.Button btn_deshabilitar_requerimientos;
-        private System.Windows.Forms.Button btn_editar_requerimientos;
-        private System.Windows.Forms.Button btn_nuevo_requerimientos;
-        private System.Windows.Forms.DataGridView dgv_requerimientos_mantenedor;
-        private System.Windows.Forms.GroupBox gbx_datos_requerimientos;
-        private System.Windows.Forms.CheckBox cbk_estado_requerimientos;
-        private System.Windows.Forms.DateTimePicker dtp_reg_requerimientos;
-        private System.Windows.Forms.TextBox txt_des_requerimientos;
-        private System.Windows.Forms.TextBox txt_id_requerimientos;
-        private System.Windows.Forms.Label label25;
-        private System.Windows.Forms.Label label26;
-        private System.Windows.Forms.Label label27;
-        private System.Windows.Forms.Button btn_cancelar_requerimientos;
-        private System.Windows.Forms.Button btn_AddMod_requerimientos;
     }
 }
