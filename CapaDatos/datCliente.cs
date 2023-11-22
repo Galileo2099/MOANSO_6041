@@ -24,7 +24,7 @@ namespace CapaDatos
         }
         #endregion singleton
 
-        #region metodos
+        #region metodo cliente
         //listado de Clientes
         public List<entCliente> ListarCliente()
         {
@@ -43,7 +43,7 @@ namespace CapaDatos
                     Cli.razonSocial = dr["razonSocial"].ToString();
                     Cli.Numero = Convert.ToInt32(dr["Numero"].ToString());
                     Cli.fecRegCliente = Convert.ToDateTime(dr["fecRegCliente"]);
-                    Cli.idCiudad = Convert.ToInt32(dr["idCiudad"].ToString());
+                    //Cli.idCiudad = Convert.ToInt32(dr["idCiudad"].ToString());
                     Cli.estCliente = Convert.ToBoolean(dr["estCliente"]);
                     lista.Add(Cli);
                 }
@@ -67,7 +67,7 @@ namespace CapaDatos
                 cmd.Parameters.AddWithValue("@razonSocial", Cli.razonSocial);
                 cmd.Parameters.AddWithValue("@Numero", Cli.Numero);
                 cmd.Parameters.AddWithValue("@fecRegCliente", Cli.fecRegCliente);
-                cmd.Parameters.AddWithValue("@idCiudad", Cli.idCiudad);
+                //cmd.Parameters.AddWithValue("@idCiudad", Cli.idCiudad);
                 cmd.Parameters.AddWithValue("@estCliente", Cli.estCliente);
                 cn.Open();
                 int i = cmd.ExecuteNonQuery();
@@ -96,7 +96,7 @@ namespace CapaDatos
                 cmd.Parameters.AddWithValue("@razonSocial", Cli.razonSocial);
                 cmd.Parameters.AddWithValue("@Numero", Cli.Numero);
                 cmd.Parameters.AddWithValue("@fecRegCliente", Cli.fecRegCliente);
-                cmd.Parameters.AddWithValue("@idCiudad", Cli.idCiudad);
+                //cmd.Parameters.AddWithValue("@idCiudad", Cli.idCiudad);
                 cmd.Parameters.AddWithValue("@estCliente", Cli.estCliente);
                 cn.Open();
                 int i = cmd.ExecuteNonQuery();
@@ -112,17 +112,20 @@ namespace CapaDatos
         }
 
         //DESHABILITA cliente
-        public Boolean DeshabilitaCliente(entCliente Cli){
+        public Boolean DeshabilitaCliente(entCliente Cli)
+        {
             SqlCommand cmd = null;
             Boolean delete = false;
-            try{
+            try
+            {
                 SqlConnection cn = Conexion.Instancia.Conectar();
                 cmd = new SqlCommand("spDeshabilitaCliente", cn);
                 cmd.CommandType = CommandType.StoredProcedure;
                 cmd.Parameters.AddWithValue("@idCliente", Cli.idCliente);
                 cn.Open();
                 int i = cmd.ExecuteNonQuery();
-                if (i > 0){
+                if (i > 0)
+                {
                     delete = true;
                 }
             }
@@ -133,7 +136,6 @@ namespace CapaDatos
             finally { cmd.Connection.Close(); }
             return delete;
         }
-
-        #endregion metodos  
+        #endregion metodo cliente
     }
 }

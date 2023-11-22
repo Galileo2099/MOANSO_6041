@@ -29,23 +29,23 @@
         private void InitializeComponent()
         {
             this.tabControl1 = new System.Windows.Forms.TabControl();
-            this.tabPage2 = new System.Windows.Forms.TabPage();
-            this.grp_datos_cliente = new System.Windows.Forms.GroupBox();
-            this.btn_addmod_cliente = new System.Windows.Forms.Button();
+            this.tabPage1 = new System.Windows.Forms.TabPage();
+            this.gbx_datoscliente = new System.Windows.Forms.GroupBox();
+            this.cbk_Estado_Cliente = new System.Windows.Forms.CheckBox();
+            this.dtPickerRegCliente = new System.Windows.Forms.DateTimePicker();
+            this.txt_id_Tipocliente = new System.Windows.Forms.TextBox();
+            this.txt_Razon_Social = new System.Windows.Forms.TextBox();
+            this.txt_id_cliente = new System.Windows.Forms.TextBox();
+            this.label5 = new System.Windows.Forms.Label();
+            this.label4 = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
+            this.label1 = new System.Windows.Forms.Label();
             this.btn_cancelar_cliente = new System.Windows.Forms.Button();
-            this.ckb_estado_cliente = new System.Windows.Forms.CheckBox();
-            this.dtp_regis_cliente = new System.Windows.Forms.DateTimePicker();
-            this.label7 = new System.Windows.Forms.Label();
-            this.txt_telefono_cliente = new System.Windows.Forms.TextBox();
-            this.txt_nombre_cliente = new System.Windows.Forms.TextBox();
-            this.txt_id_Cliente = new System.Windows.Forms.TextBox();
-            this.label6 = new System.Windows.Forms.Label();
-            this.label8 = new System.Windows.Forms.Label();
-            this.label9 = new System.Windows.Forms.Label();
+            this.btn_AddMod_cliente = new System.Windows.Forms.Button();
             this.btn_deshabilitar_cliente = new System.Windows.Forms.Button();
             this.btn_editar_cliente = new System.Windows.Forms.Button();
             this.btn_nuevo_cliente = new System.Windows.Forms.Button();
-            this.dtv_cliente_mantenedor = new System.Windows.Forms.DataGridView();
+            this.dgv_cliente_mantenedor = new System.Windows.Forms.DataGridView();
             this.tabPage3 = new System.Windows.Forms.TabPage();
             this.grp_datos_tecnico = new System.Windows.Forms.GroupBox();
             this.txt_nombre_tecnico = new System.Windows.Forms.TextBox();
@@ -62,7 +62,7 @@
             this.btn_nuevo_tecnico = new System.Windows.Forms.Button();
             this.dgv_tecnico_mantenedor = new System.Windows.Forms.DataGridView();
             this.tabPage4 = new System.Windows.Forms.TabPage();
-            this.grp_datos_vendedor = new System.Windows.Forms.GroupBox();
+            this.gbx_datos_vendedor = new System.Windows.Forms.GroupBox();
             this.txt_telefono_vendedor = new System.Windows.Forms.TextBox();
             this.txt_nombre_vendedor = new System.Windows.Forms.TextBox();
             this.txt_ID_vendedor = new System.Windows.Forms.TextBox();
@@ -112,15 +112,54 @@
             this.btn_editar_jalmacen = new System.Windows.Forms.Button();
             this.btn_nuevo_jalmacen = new System.Windows.Forms.Button();
             this.dgv_jalmacen_mantenedor = new System.Windows.Forms.DataGridView();
+            this.tabPage2 = new System.Windows.Forms.TabPage();
+            this.gbx_datos_producto = new System.Windows.Forms.GroupBox();
+            this.txt_precioproducto_mantenedor = new System.Windows.Forms.TextBox();
+            this.label30 = new System.Windows.Forms.Label();
+            this.txt_tipoproducto_mantenedor = new System.Windows.Forms.TextBox();
+            this.label29 = new System.Windows.Forms.Label();
+            this.txt_stockproductos_mantenedor = new System.Windows.Forms.TextBox();
+            this.label28 = new System.Windows.Forms.Label();
+            this.txt_nombreproducto_mantenedor = new System.Windows.Forms.TextBox();
+            this.ckb_estproducto_mantenedor = new System.Windows.Forms.CheckBox();
+            this.dtp_regproducto_mantenedor = new System.Windows.Forms.DateTimePicker();
+            this.txt_idproducto_mantenedor = new System.Windows.Forms.TextBox();
+            this.label7 = new System.Windows.Forms.Label();
+            this.label8 = new System.Windows.Forms.Label();
+            this.label9 = new System.Windows.Forms.Label();
+            this.btn_cancelarproducto_mantenedor = new System.Windows.Forms.Button();
+            this.btn_addmodproducto_mantenedor = new System.Windows.Forms.Button();
+            this.btn_deshabilitar_producto = new System.Windows.Forms.Button();
+            this.btn_editar_producto = new System.Windows.Forms.Button();
+            this.btn_nuevo_producto = new System.Windows.Forms.Button();
+            this.dgv_producto_mantenedor = new System.Windows.Forms.DataGridView();
+            this.tabPage7 = new System.Windows.Forms.TabPage();
+            this.gbx_datosdiagnostico_mantenedor = new System.Windows.Forms.GroupBox();
+            this.label6 = new System.Windows.Forms.Label();
+            this.txt_descdiagnostico_mantenedor = new System.Windows.Forms.TextBox();
+            this.ckb_estDiagnostico_mantenedor = new System.Windows.Forms.CheckBox();
+            this.dtp_regisdiagnostico_mantenedor = new System.Windows.Forms.DateTimePicker();
+            this.txt_iddiagnostico_mantenedor = new System.Windows.Forms.TextBox();
+            this.label27 = new System.Windows.Forms.Label();
+            this.label31 = new System.Windows.Forms.Label();
+            this.label32 = new System.Windows.Forms.Label();
+            this.btn_cancelardiagnostico_mantenedor = new System.Windows.Forms.Button();
+            this.btn_addmoddiagnostico_mantenedor = new System.Windows.Forms.Button();
+            this.btn_deshabilitardiagnostico_mantenedor = new System.Windows.Forms.Button();
+            this.btn_editardiagnostico_mantenedor = new System.Windows.Forms.Button();
+            this.btn_nuevodiagnostico_mantenedor = new System.Windows.Forms.Button();
+            this.dgv_diagnostico_mantenedor = new System.Windows.Forms.DataGridView();
+            this.txt_idtecnico_mantenedor = new System.Windows.Forms.TextBox();
+            this.backgroundWorker1 = new System.ComponentModel.BackgroundWorker();
             this.tabControl1.SuspendLayout();
-            this.tabPage2.SuspendLayout();
-            this.grp_datos_cliente.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dtv_cliente_mantenedor)).BeginInit();
+            this.tabPage1.SuspendLayout();
+            this.gbx_datoscliente.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dgv_cliente_mantenedor)).BeginInit();
             this.tabPage3.SuspendLayout();
             this.grp_datos_tecnico.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgv_tecnico_mantenedor)).BeginInit();
             this.tabPage4.SuspendLayout();
-            this.grp_datos_vendedor.SuspendLayout();
+            this.gbx_datos_vendedor.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgv_vendedor_mantenedor)).BeginInit();
             this.tabPage5.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgv_gerente_mantenedor)).BeginInit();
@@ -128,191 +167,219 @@
             this.tabPage6.SuspendLayout();
             this.gbx_datos_jalmacen.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgv_jalmacen_mantenedor)).BeginInit();
+            this.tabPage2.SuspendLayout();
+            this.gbx_datos_producto.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dgv_producto_mantenedor)).BeginInit();
+            this.tabPage7.SuspendLayout();
+            this.gbx_datosdiagnostico_mantenedor.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dgv_diagnostico_mantenedor)).BeginInit();
             this.SuspendLayout();
             // 
             // tabControl1
             // 
-            this.tabControl1.Controls.Add(this.tabPage2);
+            this.tabControl1.Controls.Add(this.tabPage1);
             this.tabControl1.Controls.Add(this.tabPage3);
             this.tabControl1.Controls.Add(this.tabPage4);
             this.tabControl1.Controls.Add(this.tabPage5);
             this.tabControl1.Controls.Add(this.tabPage6);
+            this.tabControl1.Controls.Add(this.tabPage2);
+            this.tabControl1.Controls.Add(this.tabPage7);
             this.tabControl1.Location = new System.Drawing.Point(3, 1);
             this.tabControl1.Name = "tabControl1";
             this.tabControl1.SelectedIndex = 0;
-            this.tabControl1.Size = new System.Drawing.Size(826, 489);
+            this.tabControl1.Size = new System.Drawing.Size(826, 503);
             this.tabControl1.TabIndex = 0;
             // 
-            // tabPage2
+            // tabPage1
             // 
-            this.tabPage2.Controls.Add(this.grp_datos_cliente);
-            this.tabPage2.Controls.Add(this.btn_deshabilitar_cliente);
-            this.tabPage2.Controls.Add(this.btn_editar_cliente);
-            this.tabPage2.Controls.Add(this.btn_nuevo_cliente);
-            this.tabPage2.Controls.Add(this.dtv_cliente_mantenedor);
-            this.tabPage2.Location = new System.Drawing.Point(4, 25);
-            this.tabPage2.Name = "tabPage2";
-            this.tabPage2.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage2.Size = new System.Drawing.Size(818, 460);
-            this.tabPage2.TabIndex = 1;
-            this.tabPage2.Text = "Cliente";
-            this.tabPage2.UseVisualStyleBackColor = true;
+            this.tabPage1.Controls.Add(this.gbx_datoscliente);
+            this.tabPage1.Controls.Add(this.btn_deshabilitar_cliente);
+            this.tabPage1.Controls.Add(this.btn_editar_cliente);
+            this.tabPage1.Controls.Add(this.btn_nuevo_cliente);
+            this.tabPage1.Controls.Add(this.dgv_cliente_mantenedor);
+            this.tabPage1.Location = new System.Drawing.Point(4, 25);
+            this.tabPage1.Name = "tabPage1";
+            this.tabPage1.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPage1.Size = new System.Drawing.Size(818, 474);
+            this.tabPage1.TabIndex = 0;
+            this.tabPage1.Text = "Cliente";
+            this.tabPage1.UseVisualStyleBackColor = true;
             // 
-            // grp_datos_cliente
+            // gbx_datoscliente
             // 
-            this.grp_datos_cliente.Controls.Add(this.btn_addmod_cliente);
-            this.grp_datos_cliente.Controls.Add(this.btn_cancelar_cliente);
-            this.grp_datos_cliente.Controls.Add(this.ckb_estado_cliente);
-            this.grp_datos_cliente.Controls.Add(this.dtp_regis_cliente);
-            this.grp_datos_cliente.Controls.Add(this.label7);
-            this.grp_datos_cliente.Controls.Add(this.txt_telefono_cliente);
-            this.grp_datos_cliente.Controls.Add(this.txt_nombre_cliente);
-            this.grp_datos_cliente.Controls.Add(this.txt_id_Cliente);
-            this.grp_datos_cliente.Controls.Add(this.label6);
-            this.grp_datos_cliente.Controls.Add(this.label8);
-            this.grp_datos_cliente.Controls.Add(this.label9);
-            this.grp_datos_cliente.Location = new System.Drawing.Point(6, 280);
-            this.grp_datos_cliente.Name = "grp_datos_cliente";
-            this.grp_datos_cliente.Size = new System.Drawing.Size(806, 174);
-            this.grp_datos_cliente.TabIndex = 5;
-            this.grp_datos_cliente.TabStop = false;
-            this.grp_datos_cliente.Text = "Datos Cliente";
+            this.gbx_datoscliente.Controls.Add(this.cbk_Estado_Cliente);
+            this.gbx_datoscliente.Controls.Add(this.dtPickerRegCliente);
+            this.gbx_datoscliente.Controls.Add(this.txt_id_Tipocliente);
+            this.gbx_datoscliente.Controls.Add(this.txt_Razon_Social);
+            this.gbx_datoscliente.Controls.Add(this.txt_id_cliente);
+            this.gbx_datoscliente.Controls.Add(this.label5);
+            this.gbx_datoscliente.Controls.Add(this.label4);
+            this.gbx_datoscliente.Controls.Add(this.label2);
+            this.gbx_datoscliente.Controls.Add(this.label1);
+            this.gbx_datoscliente.Controls.Add(this.btn_cancelar_cliente);
+            this.gbx_datoscliente.Controls.Add(this.btn_AddMod_cliente);
+            this.gbx_datoscliente.Location = new System.Drawing.Point(3, 276);
+            this.gbx_datoscliente.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.gbx_datoscliente.Name = "gbx_datoscliente";
+            this.gbx_datoscliente.Padding = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.gbx_datoscliente.Size = new System.Drawing.Size(813, 188);
+            this.gbx_datoscliente.TabIndex = 9;
+            this.gbx_datoscliente.TabStop = false;
+            this.gbx_datoscliente.Text = "Datos del Cliente";
             // 
-            // btn_addmod_cliente
+            // cbk_Estado_Cliente
             // 
-            this.btn_addmod_cliente.Location = new System.Drawing.Point(467, 113);
-            this.btn_addmod_cliente.Name = "btn_addmod_cliente";
-            this.btn_addmod_cliente.Size = new System.Drawing.Size(137, 43);
-            this.btn_addmod_cliente.TabIndex = 6;
-            this.btn_addmod_cliente.Text = "---";
-            this.btn_addmod_cliente.UseVisualStyleBackColor = true;
+            this.cbk_Estado_Cliente.AutoSize = true;
+            this.cbk_Estado_Cliente.Location = new System.Drawing.Point(525, 81);
+            this.cbk_Estado_Cliente.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.cbk_Estado_Cliente.Name = "cbk_Estado_Cliente";
+            this.cbk_Estado_Cliente.Size = new System.Drawing.Size(133, 20);
+            this.cbk_Estado_Cliente.TabIndex = 18;
+            this.cbk_Estado_Cliente.Text = "Estado de cliente";
+            this.cbk_Estado_Cliente.UseVisualStyleBackColor = true;
+            // 
+            // dtPickerRegCliente
+            // 
+            this.dtPickerRegCliente.Location = new System.Drawing.Point(543, 36);
+            this.dtPickerRegCliente.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.dtPickerRegCliente.Name = "dtPickerRegCliente";
+            this.dtPickerRegCliente.Size = new System.Drawing.Size(264, 22);
+            this.dtPickerRegCliente.TabIndex = 17;
+            // 
+            // txt_id_Tipocliente
+            // 
+            this.txt_id_Tipocliente.Location = new System.Drawing.Point(105, 140);
+            this.txt_id_Tipocliente.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.txt_id_Tipocliente.Name = "txt_id_Tipocliente";
+            this.txt_id_Tipocliente.Size = new System.Drawing.Size(200, 22);
+            this.txt_id_Tipocliente.TabIndex = 15;
+            // 
+            // txt_Razon_Social
+            // 
+            this.txt_Razon_Social.Location = new System.Drawing.Point(105, 81);
+            this.txt_Razon_Social.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.txt_Razon_Social.Name = "txt_Razon_Social";
+            this.txt_Razon_Social.Size = new System.Drawing.Size(200, 22);
+            this.txt_Razon_Social.TabIndex = 14;
+            // 
+            // txt_id_cliente
+            // 
+            this.txt_id_cliente.Location = new System.Drawing.Point(40, 34);
+            this.txt_id_cliente.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.txt_id_cliente.Name = "txt_id_cliente";
+            this.txt_id_cliente.Size = new System.Drawing.Size(146, 22);
+            this.txt_id_cliente.TabIndex = 13;
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label5.Location = new System.Drawing.Point(387, 38);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(131, 20);
+            this.label5.TabIndex = 12;
+            this.label5.Text = "Fecha registro";
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.Location = new System.Drawing.Point(6, 139);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(93, 20);
+            this.label4.TabIndex = 11;
+            this.label4.Text = "Telefono: ";
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Location = new System.Drawing.Point(19, 81);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(80, 20);
+            this.label2.TabIndex = 9;
+            this.label2.Text = "Nombre:";
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(6, 34);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(28, 20);
+            this.label1.TabIndex = 6;
+            this.label1.Text = "ID";
             // 
             // btn_cancelar_cliente
             // 
-            this.btn_cancelar_cliente.Location = new System.Drawing.Point(610, 113);
+            this.btn_cancelar_cliente.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_cancelar_cliente.Location = new System.Drawing.Point(608, 119);
+            this.btn_cancelar_cliente.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btn_cancelar_cliente.Name = "btn_cancelar_cliente";
-            this.btn_cancelar_cliente.Size = new System.Drawing.Size(137, 43);
+            this.btn_cancelar_cliente.Size = new System.Drawing.Size(116, 43);
             this.btn_cancelar_cliente.TabIndex = 7;
             this.btn_cancelar_cliente.Text = "Cancelar";
             this.btn_cancelar_cliente.UseVisualStyleBackColor = true;
+            this.btn_cancelar_cliente.Click += new System.EventHandler(this.btn_cancelar_proveedor_Click_1);
             // 
-            // ckb_estado_cliente
+            // btn_AddMod_cliente
             // 
-            this.ckb_estado_cliente.AutoSize = true;
-            this.ckb_estado_cliente.Location = new System.Drawing.Point(537, 75);
-            this.ckb_estado_cliente.Name = "ckb_estado_cliente";
-            this.ckb_estado_cliente.Size = new System.Drawing.Size(133, 20);
-            this.ckb_estado_cliente.TabIndex = 26;
-            this.ckb_estado_cliente.Text = "Estado de cliente";
-            this.ckb_estado_cliente.UseVisualStyleBackColor = true;
-            // 
-            // dtp_regis_cliente
-            // 
-            this.dtp_regis_cliente.Location = new System.Drawing.Point(550, 39);
-            this.dtp_regis_cliente.Name = "dtp_regis_cliente";
-            this.dtp_regis_cliente.Size = new System.Drawing.Size(250, 22);
-            this.dtp_regis_cliente.TabIndex = 25;
-            // 
-            // label7
-            // 
-            this.label7.AutoSize = true;
-            this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label7.Location = new System.Drawing.Point(387, 39);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(137, 20);
-            this.label7.TabIndex = 24;
-            this.label7.Text = "Fecha Registro";
-            // 
-            // txt_telefono_cliente
-            // 
-            this.txt_telefono_cliente.Location = new System.Drawing.Point(108, 105);
-            this.txt_telefono_cliente.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.txt_telefono_cliente.Name = "txt_telefono_cliente";
-            this.txt_telefono_cliente.Size = new System.Drawing.Size(200, 22);
-            this.txt_telefono_cliente.TabIndex = 23;
-            // 
-            // txt_nombre_cliente
-            // 
-            this.txt_nombre_cliente.Location = new System.Drawing.Point(108, 72);
-            this.txt_nombre_cliente.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.txt_nombre_cliente.Name = "txt_nombre_cliente";
-            this.txt_nombre_cliente.Size = new System.Drawing.Size(200, 22);
-            this.txt_nombre_cliente.TabIndex = 22;
-            // 
-            // txt_id_Cliente
-            // 
-            this.txt_id_Cliente.Location = new System.Drawing.Point(44, 35);
-            this.txt_id_Cliente.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.txt_id_Cliente.Name = "txt_id_Cliente";
-            this.txt_id_Cliente.Size = new System.Drawing.Size(200, 22);
-            this.txt_id_Cliente.TabIndex = 21;
-            // 
-            // label6
-            // 
-            this.label6.AutoSize = true;
-            this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.Location = new System.Drawing.Point(10, 105);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(93, 20);
-            this.label6.TabIndex = 20;
-            this.label6.Text = "Telefono: ";
-            // 
-            // label8
-            // 
-            this.label8.AutoSize = true;
-            this.label8.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label8.Location = new System.Drawing.Point(10, 73);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(80, 20);
-            this.label8.TabIndex = 18;
-            this.label8.Text = "Nombre:";
-            // 
-            // label9
-            // 
-            this.label9.AutoSize = true;
-            this.label9.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label9.Location = new System.Drawing.Point(10, 37);
-            this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(28, 20);
-            this.label9.TabIndex = 17;
-            this.label9.Text = "ID";
+            this.btn_AddMod_cliente.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_AddMod_cliente.Location = new System.Drawing.Point(486, 119);
+            this.btn_AddMod_cliente.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btn_AddMod_cliente.Name = "btn_AddMod_cliente";
+            this.btn_AddMod_cliente.Size = new System.Drawing.Size(116, 43);
+            this.btn_AddMod_cliente.TabIndex = 8;
+            this.btn_AddMod_cliente.Text = "---";
+            this.btn_AddMod_cliente.UseVisualStyleBackColor = true;
+            this.btn_AddMod_cliente.Click += new System.EventHandler(this.btn_AddMod_proveedor_Click_1);
             // 
             // btn_deshabilitar_cliente
             // 
+            this.btn_deshabilitar_cliente.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_deshabilitar_cliente.Location = new System.Drawing.Point(653, 137);
+            this.btn_deshabilitar_cliente.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btn_deshabilitar_cliente.Name = "btn_deshabilitar_cliente";
             this.btn_deshabilitar_cliente.Size = new System.Drawing.Size(137, 43);
-            this.btn_deshabilitar_cliente.TabIndex = 3;
+            this.btn_deshabilitar_cliente.TabIndex = 7;
             this.btn_deshabilitar_cliente.Text = "Deshabilitar";
             this.btn_deshabilitar_cliente.UseVisualStyleBackColor = true;
+            this.btn_deshabilitar_cliente.Click += new System.EventHandler(this.btn_deshabilitar_proveedor_Click_1);
             // 
             // btn_editar_cliente
             // 
+            this.btn_editar_cliente.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_editar_cliente.Location = new System.Drawing.Point(653, 88);
+            this.btn_editar_cliente.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btn_editar_cliente.Name = "btn_editar_cliente";
             this.btn_editar_cliente.Size = new System.Drawing.Size(137, 43);
-            this.btn_editar_cliente.TabIndex = 2;
+            this.btn_editar_cliente.TabIndex = 6;
             this.btn_editar_cliente.Text = "Editar";
             this.btn_editar_cliente.UseVisualStyleBackColor = true;
+            this.btn_editar_cliente.Click += new System.EventHandler(this.btn_editar_proveedor_Click_1);
             // 
             // btn_nuevo_cliente
             // 
+            this.btn_nuevo_cliente.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_nuevo_cliente.Location = new System.Drawing.Point(653, 39);
+            this.btn_nuevo_cliente.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btn_nuevo_cliente.Name = "btn_nuevo_cliente";
             this.btn_nuevo_cliente.Size = new System.Drawing.Size(137, 43);
-            this.btn_nuevo_cliente.TabIndex = 1;
+            this.btn_nuevo_cliente.TabIndex = 5;
             this.btn_nuevo_cliente.Text = "Nuevo";
             this.btn_nuevo_cliente.UseVisualStyleBackColor = true;
+            this.btn_nuevo_cliente.Click += new System.EventHandler(this.btn_nuevo_proveedor_Click_1);
             // 
-            // dtv_cliente_mantenedor
+            // dgv_cliente_mantenedor
             // 
-            this.dtv_cliente_mantenedor.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dtv_cliente_mantenedor.Location = new System.Drawing.Point(6, 6);
-            this.dtv_cliente_mantenedor.Name = "dtv_cliente_mantenedor";
-            this.dtv_cliente_mantenedor.RowHeadersWidth = 51;
-            this.dtv_cliente_mantenedor.RowTemplate.Height = 24;
-            this.dtv_cliente_mantenedor.Size = new System.Drawing.Size(611, 268);
-            this.dtv_cliente_mantenedor.TabIndex = 0;
+            this.dgv_cliente_mantenedor.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgv_cliente_mantenedor.Location = new System.Drawing.Point(6, 6);
+            this.dgv_cliente_mantenedor.Name = "dgv_cliente_mantenedor";
+            this.dgv_cliente_mantenedor.RowHeadersWidth = 51;
+            this.dgv_cliente_mantenedor.RowTemplate.Height = 24;
+            this.dgv_cliente_mantenedor.Size = new System.Drawing.Size(611, 268);
+            this.dgv_cliente_mantenedor.TabIndex = 0;
+            this.dgv_cliente_mantenedor.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgv_proveedor_mantenedor_CellClick);
             // 
             // tabPage3
             // 
@@ -323,7 +390,7 @@
             this.tabPage3.Controls.Add(this.dgv_tecnico_mantenedor);
             this.tabPage3.Location = new System.Drawing.Point(4, 25);
             this.tabPage3.Name = "tabPage3";
-            this.tabPage3.Size = new System.Drawing.Size(818, 460);
+            this.tabPage3.Size = new System.Drawing.Size(818, 474);
             this.tabPage3.TabIndex = 2;
             this.tabPage3.Text = "Tecnico";
             this.tabPage3.UseVisualStyleBackColor = true;
@@ -368,6 +435,7 @@
             this.btn_addmod_tecnico.TabIndex = 6;
             this.btn_addmod_tecnico.Text = "---";
             this.btn_addmod_tecnico.UseVisualStyleBackColor = true;
+            this.btn_addmod_tecnico.Click += new System.EventHandler(this.btn_addmod_tecnico_Click);
             // 
             // btn_cancelar_tecnico
             // 
@@ -377,6 +445,7 @@
             this.btn_cancelar_tecnico.TabIndex = 7;
             this.btn_cancelar_tecnico.Text = "Cancelar";
             this.btn_cancelar_tecnico.UseVisualStyleBackColor = true;
+            this.btn_cancelar_tecnico.Click += new System.EventHandler(this.btn_cancelar_tecnico_Click);
             // 
             // dtp_regis_tecnico
             // 
@@ -433,6 +502,7 @@
             this.btn_deshabilitar_tecnico.TabIndex = 3;
             this.btn_deshabilitar_tecnico.Text = "Deshabilitar";
             this.btn_deshabilitar_tecnico.UseVisualStyleBackColor = true;
+            this.btn_deshabilitar_tecnico.Click += new System.EventHandler(this.btn_deshabilitar_tecnico_Click);
             // 
             // btn_editar_tecnico
             // 
@@ -442,6 +512,7 @@
             this.btn_editar_tecnico.TabIndex = 2;
             this.btn_editar_tecnico.Text = "Editar";
             this.btn_editar_tecnico.UseVisualStyleBackColor = true;
+            this.btn_editar_tecnico.Click += new System.EventHandler(this.btn_editar_tecnico_Click);
             // 
             // btn_nuevo_tecnico
             // 
@@ -451,6 +522,7 @@
             this.btn_nuevo_tecnico.TabIndex = 1;
             this.btn_nuevo_tecnico.Text = "Nuevo";
             this.btn_nuevo_tecnico.UseVisualStyleBackColor = true;
+            this.btn_nuevo_tecnico.Click += new System.EventHandler(this.btn_nuevo_tecnico_Click);
             // 
             // dgv_tecnico_mantenedor
             // 
@@ -464,37 +536,37 @@
             // 
             // tabPage4
             // 
-            this.tabPage4.Controls.Add(this.grp_datos_vendedor);
+            this.tabPage4.Controls.Add(this.gbx_datos_vendedor);
             this.tabPage4.Controls.Add(this.btn_deshabilitar_vendedor);
             this.tabPage4.Controls.Add(this.btn_editar_vendedor);
             this.tabPage4.Controls.Add(this.btn_nuevo_vendedor);
             this.tabPage4.Controls.Add(this.dgv_vendedor_mantenedor);
             this.tabPage4.Location = new System.Drawing.Point(4, 25);
             this.tabPage4.Name = "tabPage4";
-            this.tabPage4.Size = new System.Drawing.Size(818, 460);
+            this.tabPage4.Size = new System.Drawing.Size(818, 474);
             this.tabPage4.TabIndex = 3;
             this.tabPage4.Text = "Vendedor";
             this.tabPage4.UseVisualStyleBackColor = true;
             // 
-            // grp_datos_vendedor
+            // gbx_datos_vendedor
             // 
-            this.grp_datos_vendedor.Controls.Add(this.txt_telefono_vendedor);
-            this.grp_datos_vendedor.Controls.Add(this.txt_nombre_vendedor);
-            this.grp_datos_vendedor.Controls.Add(this.txt_ID_vendedor);
-            this.grp_datos_vendedor.Controls.Add(this.btn_addmod_vendedor);
-            this.grp_datos_vendedor.Controls.Add(this.btn_cancelar_vendedor);
-            this.grp_datos_vendedor.Controls.Add(this.ckb_estado_vendedor);
-            this.grp_datos_vendedor.Controls.Add(this.dtp_regis_vendedor);
-            this.grp_datos_vendedor.Controls.Add(this.label16);
-            this.grp_datos_vendedor.Controls.Add(this.label15);
-            this.grp_datos_vendedor.Controls.Add(this.label14);
-            this.grp_datos_vendedor.Controls.Add(this.label13);
-            this.grp_datos_vendedor.Location = new System.Drawing.Point(11, 289);
-            this.grp_datos_vendedor.Name = "grp_datos_vendedor";
-            this.grp_datos_vendedor.Size = new System.Drawing.Size(806, 174);
-            this.grp_datos_vendedor.TabIndex = 5;
-            this.grp_datos_vendedor.TabStop = false;
-            this.grp_datos_vendedor.Text = "Datos del vendedor";
+            this.gbx_datos_vendedor.Controls.Add(this.txt_telefono_vendedor);
+            this.gbx_datos_vendedor.Controls.Add(this.txt_nombre_vendedor);
+            this.gbx_datos_vendedor.Controls.Add(this.txt_ID_vendedor);
+            this.gbx_datos_vendedor.Controls.Add(this.btn_addmod_vendedor);
+            this.gbx_datos_vendedor.Controls.Add(this.btn_cancelar_vendedor);
+            this.gbx_datos_vendedor.Controls.Add(this.ckb_estado_vendedor);
+            this.gbx_datos_vendedor.Controls.Add(this.dtp_regis_vendedor);
+            this.gbx_datos_vendedor.Controls.Add(this.label16);
+            this.gbx_datos_vendedor.Controls.Add(this.label15);
+            this.gbx_datos_vendedor.Controls.Add(this.label14);
+            this.gbx_datos_vendedor.Controls.Add(this.label13);
+            this.gbx_datos_vendedor.Location = new System.Drawing.Point(11, 289);
+            this.gbx_datos_vendedor.Name = "gbx_datos_vendedor";
+            this.gbx_datos_vendedor.Size = new System.Drawing.Size(806, 174);
+            this.gbx_datos_vendedor.TabIndex = 5;
+            this.gbx_datos_vendedor.TabStop = false;
+            this.gbx_datos_vendedor.Text = "Datos del vendedor";
             // 
             // txt_telefono_vendedor
             // 
@@ -638,7 +710,7 @@
             this.tabPage5.Controls.Add(this.gbx_datos_gerente);
             this.tabPage5.Location = new System.Drawing.Point(4, 25);
             this.tabPage5.Name = "tabPage5";
-            this.tabPage5.Size = new System.Drawing.Size(818, 460);
+            this.tabPage5.Size = new System.Drawing.Size(818, 474);
             this.tabPage5.TabIndex = 4;
             this.tabPage5.Text = "Gerente";
             this.tabPage5.UseVisualStyleBackColor = true;
@@ -824,7 +896,7 @@
             this.tabPage6.Controls.Add(this.dgv_jalmacen_mantenedor);
             this.tabPage6.Location = new System.Drawing.Point(4, 25);
             this.tabPage6.Name = "tabPage6";
-            this.tabPage6.Size = new System.Drawing.Size(818, 460);
+            this.tabPage6.Size = new System.Drawing.Size(818, 474);
             this.tabPage6.TabIndex = 5;
             this.tabPage6.Text = "Jefe almacen";
             this.tabPage6.UseVisualStyleBackColor = true;
@@ -1001,26 +1073,446 @@
             this.dgv_jalmacen_mantenedor.Size = new System.Drawing.Size(611, 268);
             this.dgv_jalmacen_mantenedor.TabIndex = 38;
             // 
+            // tabPage2
+            // 
+            this.tabPage2.Controls.Add(this.gbx_datos_producto);
+            this.tabPage2.Controls.Add(this.btn_deshabilitar_producto);
+            this.tabPage2.Controls.Add(this.btn_editar_producto);
+            this.tabPage2.Controls.Add(this.btn_nuevo_producto);
+            this.tabPage2.Controls.Add(this.dgv_producto_mantenedor);
+            this.tabPage2.Location = new System.Drawing.Point(4, 25);
+            this.tabPage2.Name = "tabPage2";
+            this.tabPage2.Size = new System.Drawing.Size(818, 474);
+            this.tabPage2.TabIndex = 7;
+            this.tabPage2.Text = "Productos";
+            this.tabPage2.UseVisualStyleBackColor = true;
+            // 
+            // gbx_datos_producto
+            // 
+            this.gbx_datos_producto.Controls.Add(this.txt_precioproducto_mantenedor);
+            this.gbx_datos_producto.Controls.Add(this.label30);
+            this.gbx_datos_producto.Controls.Add(this.txt_tipoproducto_mantenedor);
+            this.gbx_datos_producto.Controls.Add(this.label29);
+            this.gbx_datos_producto.Controls.Add(this.txt_stockproductos_mantenedor);
+            this.gbx_datos_producto.Controls.Add(this.label28);
+            this.gbx_datos_producto.Controls.Add(this.txt_nombreproducto_mantenedor);
+            this.gbx_datos_producto.Controls.Add(this.ckb_estproducto_mantenedor);
+            this.gbx_datos_producto.Controls.Add(this.dtp_regproducto_mantenedor);
+            this.gbx_datos_producto.Controls.Add(this.txt_idproducto_mantenedor);
+            this.gbx_datos_producto.Controls.Add(this.label7);
+            this.gbx_datos_producto.Controls.Add(this.label8);
+            this.gbx_datos_producto.Controls.Add(this.label9);
+            this.gbx_datos_producto.Controls.Add(this.btn_cancelarproducto_mantenedor);
+            this.gbx_datos_producto.Controls.Add(this.btn_addmodproducto_mantenedor);
+            this.gbx_datos_producto.Location = new System.Drawing.Point(5, 276);
+            this.gbx_datos_producto.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.gbx_datos_producto.Name = "gbx_datos_producto";
+            this.gbx_datos_producto.Padding = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.gbx_datos_producto.Size = new System.Drawing.Size(813, 203);
+            this.gbx_datos_producto.TabIndex = 46;
+            this.gbx_datos_producto.TabStop = false;
+            this.gbx_datos_producto.Text = "Datos";
+            // 
+            // txt_precioproducto_mantenedor
+            // 
+            this.txt_precioproducto_mantenedor.Location = new System.Drawing.Point(341, 135);
+            this.txt_precioproducto_mantenedor.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.txt_precioproducto_mantenedor.Name = "txt_precioproducto_mantenedor";
+            this.txt_precioproducto_mantenedor.Size = new System.Drawing.Size(112, 22);
+            this.txt_precioproducto_mantenedor.TabIndex = 27;
+            // 
+            // label30
+            // 
+            this.label30.AutoSize = true;
+            this.label30.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label30.Location = new System.Drawing.Point(337, 111);
+            this.label30.Name = "label30";
+            this.label30.Size = new System.Drawing.Size(63, 20);
+            this.label30.TabIndex = 26;
+            this.label30.Text = "Precio";
+            this.label30.TextAlign = System.Drawing.ContentAlignment.TopRight;
+            // 
+            // txt_tipoproducto_mantenedor
+            // 
+            this.txt_tipoproducto_mantenedor.Location = new System.Drawing.Point(341, 79);
+            this.txt_tipoproducto_mantenedor.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.txt_tipoproducto_mantenedor.Name = "txt_tipoproducto_mantenedor";
+            this.txt_tipoproducto_mantenedor.Size = new System.Drawing.Size(112, 22);
+            this.txt_tipoproducto_mantenedor.TabIndex = 25;
+            // 
+            // label29
+            // 
+            this.label29.AutoSize = true;
+            this.label29.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label29.Location = new System.Drawing.Point(337, 55);
+            this.label29.Name = "label29";
+            this.label29.Size = new System.Drawing.Size(45, 20);
+            this.label29.TabIndex = 24;
+            this.label29.Text = "Tipo";
+            this.label29.TextAlign = System.Drawing.ContentAlignment.TopRight;
+            // 
+            // txt_stockproductos_mantenedor
+            // 
+            this.txt_stockproductos_mantenedor.Location = new System.Drawing.Point(104, 132);
+            this.txt_stockproductos_mantenedor.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.txt_stockproductos_mantenedor.Name = "txt_stockproductos_mantenedor";
+            this.txt_stockproductos_mantenedor.Size = new System.Drawing.Size(112, 22);
+            this.txt_stockproductos_mantenedor.TabIndex = 23;
+            // 
+            // label28
+            // 
+            this.label28.AutoSize = true;
+            this.label28.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label28.Location = new System.Drawing.Point(26, 134);
+            this.label28.Name = "label28";
+            this.label28.Size = new System.Drawing.Size(54, 20);
+            this.label28.TabIndex = 22;
+            this.label28.Text = "stock";
+            this.label28.TextAlign = System.Drawing.ContentAlignment.TopRight;
+            // 
+            // txt_nombreproducto_mantenedor
+            // 
+            this.txt_nombreproducto_mantenedor.Location = new System.Drawing.Point(104, 81);
+            this.txt_nombreproducto_mantenedor.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.txt_nombreproducto_mantenedor.Name = "txt_nombreproducto_mantenedor";
+            this.txt_nombreproducto_mantenedor.Size = new System.Drawing.Size(198, 22);
+            this.txt_nombreproducto_mantenedor.TabIndex = 19;
+            // 
+            // ckb_estproducto_mantenedor
+            // 
+            this.ckb_estproducto_mantenedor.AutoSize = true;
+            this.ckb_estproducto_mantenedor.Location = new System.Drawing.Point(562, 89);
+            this.ckb_estproducto_mantenedor.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.ckb_estproducto_mantenedor.Name = "ckb_estproducto_mantenedor";
+            this.ckb_estproducto_mantenedor.Size = new System.Drawing.Size(147, 20);
+            this.ckb_estproducto_mantenedor.TabIndex = 18;
+            this.ckb_estproducto_mantenedor.Text = "Estado de producto";
+            this.ckb_estproducto_mantenedor.UseVisualStyleBackColor = true;
+            // 
+            // dtp_regproducto_mantenedor
+            // 
+            this.dtp_regproducto_mantenedor.Location = new System.Drawing.Point(512, 57);
+            this.dtp_regproducto_mantenedor.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.dtp_regproducto_mantenedor.Name = "dtp_regproducto_mantenedor";
+            this.dtp_regproducto_mantenedor.Size = new System.Drawing.Size(264, 22);
+            this.dtp_regproducto_mantenedor.TabIndex = 17;
+            // 
+            // txt_idproducto_mantenedor
+            // 
+            this.txt_idproducto_mantenedor.Location = new System.Drawing.Point(51, 34);
+            this.txt_idproducto_mantenedor.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.txt_idproducto_mantenedor.Name = "txt_idproducto_mantenedor";
+            this.txt_idproducto_mantenedor.Size = new System.Drawing.Size(108, 22);
+            this.txt_idproducto_mantenedor.TabIndex = 13;
+            // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label7.Location = new System.Drawing.Point(558, 35);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(131, 20);
+            this.label7.TabIndex = 12;
+            this.label7.Text = "Fecha registro";
+            // 
+            // label8
+            // 
+            this.label8.AutoSize = true;
+            this.label8.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label8.Location = new System.Drawing.Point(6, 81);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(74, 20);
+            this.label8.TabIndex = 9;
+            this.label8.Text = "Nombre";
+            this.label8.TextAlign = System.Drawing.ContentAlignment.TopRight;
+            // 
+            // label9
+            // 
+            this.label9.AutoSize = true;
+            this.label9.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label9.Location = new System.Drawing.Point(6, 34);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(28, 20);
+            this.label9.TabIndex = 6;
+            this.label9.Text = "ID";
+            // 
+            // btn_cancelarproducto_mantenedor
+            // 
+            this.btn_cancelarproducto_mantenedor.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_cancelarproducto_mantenedor.Location = new System.Drawing.Point(634, 113);
+            this.btn_cancelarproducto_mantenedor.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btn_cancelarproducto_mantenedor.Name = "btn_cancelarproducto_mantenedor";
+            this.btn_cancelarproducto_mantenedor.Size = new System.Drawing.Size(116, 43);
+            this.btn_cancelarproducto_mantenedor.TabIndex = 7;
+            this.btn_cancelarproducto_mantenedor.Text = "Cancelar";
+            this.btn_cancelarproducto_mantenedor.UseVisualStyleBackColor = true;
+            // 
+            // btn_addmodproducto_mantenedor
+            // 
+            this.btn_addmodproducto_mantenedor.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_addmodproducto_mantenedor.Location = new System.Drawing.Point(512, 113);
+            this.btn_addmodproducto_mantenedor.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btn_addmodproducto_mantenedor.Name = "btn_addmodproducto_mantenedor";
+            this.btn_addmodproducto_mantenedor.Size = new System.Drawing.Size(116, 43);
+            this.btn_addmodproducto_mantenedor.TabIndex = 8;
+            this.btn_addmodproducto_mantenedor.Text = "---";
+            this.btn_addmodproducto_mantenedor.UseVisualStyleBackColor = true;
+            // 
+            // btn_deshabilitar_producto
+            // 
+            this.btn_deshabilitar_producto.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_deshabilitar_producto.Location = new System.Drawing.Point(658, 135);
+            this.btn_deshabilitar_producto.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btn_deshabilitar_producto.Name = "btn_deshabilitar_producto";
+            this.btn_deshabilitar_producto.Size = new System.Drawing.Size(137, 43);
+            this.btn_deshabilitar_producto.TabIndex = 45;
+            this.btn_deshabilitar_producto.Text = "Deshabilitar";
+            this.btn_deshabilitar_producto.UseVisualStyleBackColor = true;
+            // 
+            // btn_editar_producto
+            // 
+            this.btn_editar_producto.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_editar_producto.Location = new System.Drawing.Point(658, 86);
+            this.btn_editar_producto.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btn_editar_producto.Name = "btn_editar_producto";
+            this.btn_editar_producto.Size = new System.Drawing.Size(137, 43);
+            this.btn_editar_producto.TabIndex = 44;
+            this.btn_editar_producto.Text = "Editar";
+            this.btn_editar_producto.UseVisualStyleBackColor = true;
+            // 
+            // btn_nuevo_producto
+            // 
+            this.btn_nuevo_producto.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_nuevo_producto.Location = new System.Drawing.Point(658, 37);
+            this.btn_nuevo_producto.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btn_nuevo_producto.Name = "btn_nuevo_producto";
+            this.btn_nuevo_producto.Size = new System.Drawing.Size(137, 43);
+            this.btn_nuevo_producto.TabIndex = 43;
+            this.btn_nuevo_producto.Text = "Nuevo";
+            this.btn_nuevo_producto.UseVisualStyleBackColor = true;
+            // 
+            // dgv_producto_mantenedor
+            // 
+            this.dgv_producto_mantenedor.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgv_producto_mantenedor.Location = new System.Drawing.Point(5, 3);
+            this.dgv_producto_mantenedor.Name = "dgv_producto_mantenedor";
+            this.dgv_producto_mantenedor.RowHeadersWidth = 51;
+            this.dgv_producto_mantenedor.RowTemplate.Height = 24;
+            this.dgv_producto_mantenedor.Size = new System.Drawing.Size(611, 268);
+            this.dgv_producto_mantenedor.TabIndex = 42;
+            // 
+            // tabPage7
+            // 
+            this.tabPage7.Controls.Add(this.gbx_datosdiagnostico_mantenedor);
+            this.tabPage7.Controls.Add(this.btn_deshabilitardiagnostico_mantenedor);
+            this.tabPage7.Controls.Add(this.btn_editardiagnostico_mantenedor);
+            this.tabPage7.Controls.Add(this.btn_nuevodiagnostico_mantenedor);
+            this.tabPage7.Controls.Add(this.dgv_diagnostico_mantenedor);
+            this.tabPage7.Location = new System.Drawing.Point(4, 25);
+            this.tabPage7.Name = "tabPage7";
+            this.tabPage7.Size = new System.Drawing.Size(818, 474);
+            this.tabPage7.TabIndex = 8;
+            this.tabPage7.Text = "Diagnostico";
+            this.tabPage7.UseVisualStyleBackColor = true;
+            // 
+            // gbx_datosdiagnostico_mantenedor
+            // 
+            this.gbx_datosdiagnostico_mantenedor.Controls.Add(this.txt_idtecnico_mantenedor);
+            this.gbx_datosdiagnostico_mantenedor.Controls.Add(this.label6);
+            this.gbx_datosdiagnostico_mantenedor.Controls.Add(this.txt_descdiagnostico_mantenedor);
+            this.gbx_datosdiagnostico_mantenedor.Controls.Add(this.ckb_estDiagnostico_mantenedor);
+            this.gbx_datosdiagnostico_mantenedor.Controls.Add(this.dtp_regisdiagnostico_mantenedor);
+            this.gbx_datosdiagnostico_mantenedor.Controls.Add(this.txt_iddiagnostico_mantenedor);
+            this.gbx_datosdiagnostico_mantenedor.Controls.Add(this.label27);
+            this.gbx_datosdiagnostico_mantenedor.Controls.Add(this.label31);
+            this.gbx_datosdiagnostico_mantenedor.Controls.Add(this.label32);
+            this.gbx_datosdiagnostico_mantenedor.Controls.Add(this.btn_cancelardiagnostico_mantenedor);
+            this.gbx_datosdiagnostico_mantenedor.Controls.Add(this.btn_addmoddiagnostico_mantenedor);
+            this.gbx_datosdiagnostico_mantenedor.Location = new System.Drawing.Point(5, 276);
+            this.gbx_datosdiagnostico_mantenedor.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.gbx_datosdiagnostico_mantenedor.Name = "gbx_datosdiagnostico_mantenedor";
+            this.gbx_datosdiagnostico_mantenedor.Padding = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.gbx_datosdiagnostico_mantenedor.Size = new System.Drawing.Size(813, 203);
+            this.gbx_datosdiagnostico_mantenedor.TabIndex = 50;
+            this.gbx_datosdiagnostico_mantenedor.TabStop = false;
+            this.gbx_datosdiagnostico_mantenedor.Text = "Datos";
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label6.Location = new System.Drawing.Point(225, 36);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(100, 20);
+            this.label6.TabIndex = 20;
+            this.label6.Text = "ID Tecnico";
+            // 
+            // txt_descdiagnostico_mantenedor
+            // 
+            this.txt_descdiagnostico_mantenedor.Location = new System.Drawing.Point(10, 103);
+            this.txt_descdiagnostico_mantenedor.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.txt_descdiagnostico_mantenedor.Multiline = true;
+            this.txt_descdiagnostico_mantenedor.Name = "txt_descdiagnostico_mantenedor";
+            this.txt_descdiagnostico_mantenedor.Size = new System.Drawing.Size(469, 82);
+            this.txt_descdiagnostico_mantenedor.TabIndex = 19;
+            // 
+            // ckb_estDiagnostico_mantenedor
+            // 
+            this.ckb_estDiagnostico_mantenedor.AutoSize = true;
+            this.ckb_estDiagnostico_mantenedor.Location = new System.Drawing.Point(562, 89);
+            this.ckb_estDiagnostico_mantenedor.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.ckb_estDiagnostico_mantenedor.Name = "ckb_estDiagnostico_mantenedor";
+            this.ckb_estDiagnostico_mantenedor.Size = new System.Drawing.Size(164, 20);
+            this.ckb_estDiagnostico_mantenedor.TabIndex = 18;
+            this.ckb_estDiagnostico_mantenedor.Text = "Estado de diagnostico";
+            this.ckb_estDiagnostico_mantenedor.UseVisualStyleBackColor = true;
+            // 
+            // dtp_regisdiagnostico_mantenedor
+            // 
+            this.dtp_regisdiagnostico_mantenedor.Location = new System.Drawing.Point(512, 57);
+            this.dtp_regisdiagnostico_mantenedor.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.dtp_regisdiagnostico_mantenedor.Name = "dtp_regisdiagnostico_mantenedor";
+            this.dtp_regisdiagnostico_mantenedor.Size = new System.Drawing.Size(264, 22);
+            this.dtp_regisdiagnostico_mantenedor.TabIndex = 17;
+            // 
+            // txt_iddiagnostico_mantenedor
+            // 
+            this.txt_iddiagnostico_mantenedor.Location = new System.Drawing.Point(51, 34);
+            this.txt_iddiagnostico_mantenedor.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.txt_iddiagnostico_mantenedor.Name = "txt_iddiagnostico_mantenedor";
+            this.txt_iddiagnostico_mantenedor.Size = new System.Drawing.Size(108, 22);
+            this.txt_iddiagnostico_mantenedor.TabIndex = 13;
+            // 
+            // label27
+            // 
+            this.label27.AutoSize = true;
+            this.label27.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label27.Location = new System.Drawing.Point(558, 35);
+            this.label27.Name = "label27";
+            this.label27.Size = new System.Drawing.Size(131, 20);
+            this.label27.TabIndex = 12;
+            this.label27.Text = "Fecha registro";
+            // 
+            // label31
+            // 
+            this.label31.AutoSize = true;
+            this.label31.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label31.Location = new System.Drawing.Point(6, 81);
+            this.label31.Name = "label31";
+            this.label31.Size = new System.Drawing.Size(109, 20);
+            this.label31.TabIndex = 9;
+            this.label31.Text = "Diagnostico";
+            this.label31.TextAlign = System.Drawing.ContentAlignment.TopRight;
+            // 
+            // label32
+            // 
+            this.label32.AutoSize = true;
+            this.label32.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label32.Location = new System.Drawing.Point(6, 34);
+            this.label32.Name = "label32";
+            this.label32.Size = new System.Drawing.Size(28, 20);
+            this.label32.TabIndex = 6;
+            this.label32.Text = "ID";
+            // 
+            // btn_cancelardiagnostico_mantenedor
+            // 
+            this.btn_cancelardiagnostico_mantenedor.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_cancelardiagnostico_mantenedor.Location = new System.Drawing.Point(634, 113);
+            this.btn_cancelardiagnostico_mantenedor.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btn_cancelardiagnostico_mantenedor.Name = "btn_cancelardiagnostico_mantenedor";
+            this.btn_cancelardiagnostico_mantenedor.Size = new System.Drawing.Size(116, 43);
+            this.btn_cancelardiagnostico_mantenedor.TabIndex = 7;
+            this.btn_cancelardiagnostico_mantenedor.Text = "Cancelar";
+            this.btn_cancelardiagnostico_mantenedor.UseVisualStyleBackColor = true;
+            this.btn_cancelardiagnostico_mantenedor.Click += new System.EventHandler(this.btn_cancelardiagnostico_mantenedor_Click);
+            // 
+            // btn_addmoddiagnostico_mantenedor
+            // 
+            this.btn_addmoddiagnostico_mantenedor.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_addmoddiagnostico_mantenedor.Location = new System.Drawing.Point(512, 113);
+            this.btn_addmoddiagnostico_mantenedor.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btn_addmoddiagnostico_mantenedor.Name = "btn_addmoddiagnostico_mantenedor";
+            this.btn_addmoddiagnostico_mantenedor.Size = new System.Drawing.Size(116, 43);
+            this.btn_addmoddiagnostico_mantenedor.TabIndex = 8;
+            this.btn_addmoddiagnostico_mantenedor.Text = "---";
+            this.btn_addmoddiagnostico_mantenedor.UseVisualStyleBackColor = true;
+            this.btn_addmoddiagnostico_mantenedor.Click += new System.EventHandler(this.btn_addmoddiagnostico_mantenedor_Click);
+            // 
+            // btn_deshabilitardiagnostico_mantenedor
+            // 
+            this.btn_deshabilitardiagnostico_mantenedor.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_deshabilitardiagnostico_mantenedor.Location = new System.Drawing.Point(658, 135);
+            this.btn_deshabilitardiagnostico_mantenedor.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btn_deshabilitardiagnostico_mantenedor.Name = "btn_deshabilitardiagnostico_mantenedor";
+            this.btn_deshabilitardiagnostico_mantenedor.Size = new System.Drawing.Size(137, 43);
+            this.btn_deshabilitardiagnostico_mantenedor.TabIndex = 49;
+            this.btn_deshabilitardiagnostico_mantenedor.Text = "Deshabilitar";
+            this.btn_deshabilitardiagnostico_mantenedor.UseVisualStyleBackColor = true;
+            this.btn_deshabilitardiagnostico_mantenedor.Click += new System.EventHandler(this.btn_deshabilitardiagnostico_mantenedor_Click);
+            // 
+            // btn_editardiagnostico_mantenedor
+            // 
+            this.btn_editardiagnostico_mantenedor.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_editardiagnostico_mantenedor.Location = new System.Drawing.Point(658, 86);
+            this.btn_editardiagnostico_mantenedor.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btn_editardiagnostico_mantenedor.Name = "btn_editardiagnostico_mantenedor";
+            this.btn_editardiagnostico_mantenedor.Size = new System.Drawing.Size(137, 43);
+            this.btn_editardiagnostico_mantenedor.TabIndex = 48;
+            this.btn_editardiagnostico_mantenedor.Text = "Editar";
+            this.btn_editardiagnostico_mantenedor.UseVisualStyleBackColor = true;
+            this.btn_editardiagnostico_mantenedor.Click += new System.EventHandler(this.btn_editardiagnostico_mantenedor_Click);
+            // 
+            // btn_nuevodiagnostico_mantenedor
+            // 
+            this.btn_nuevodiagnostico_mantenedor.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_nuevodiagnostico_mantenedor.Location = new System.Drawing.Point(658, 37);
+            this.btn_nuevodiagnostico_mantenedor.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btn_nuevodiagnostico_mantenedor.Name = "btn_nuevodiagnostico_mantenedor";
+            this.btn_nuevodiagnostico_mantenedor.Size = new System.Drawing.Size(137, 43);
+            this.btn_nuevodiagnostico_mantenedor.TabIndex = 47;
+            this.btn_nuevodiagnostico_mantenedor.Text = "Nuevo";
+            this.btn_nuevodiagnostico_mantenedor.UseVisualStyleBackColor = true;
+            this.btn_nuevodiagnostico_mantenedor.Click += new System.EventHandler(this.btn_nuevodiagnostico_mantenedor_Click);
+            // 
+            // dgv_diagnostico_mantenedor
+            // 
+            this.dgv_diagnostico_mantenedor.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgv_diagnostico_mantenedor.Location = new System.Drawing.Point(5, 3);
+            this.dgv_diagnostico_mantenedor.Name = "dgv_diagnostico_mantenedor";
+            this.dgv_diagnostico_mantenedor.RowHeadersWidth = 51;
+            this.dgv_diagnostico_mantenedor.RowTemplate.Height = 24;
+            this.dgv_diagnostico_mantenedor.Size = new System.Drawing.Size(611, 268);
+            this.dgv_diagnostico_mantenedor.TabIndex = 46;
+            this.dgv_diagnostico_mantenedor.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgv_diagnostico_mantenedor_CellClick);
+            // 
+            // txt_idtecnico_mantenedor
+            // 
+            this.txt_idtecnico_mantenedor.Location = new System.Drawing.Point(348, 32);
+            this.txt_idtecnico_mantenedor.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.txt_idtecnico_mantenedor.Name = "txt_idtecnico_mantenedor";
+            this.txt_idtecnico_mantenedor.Size = new System.Drawing.Size(108, 22);
+            this.txt_idtecnico_mantenedor.TabIndex = 22;
+            // 
             // FormsMantenedores
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(831, 493);
+            this.ClientSize = new System.Drawing.Size(831, 507);
             this.Controls.Add(this.tabControl1);
             this.Name = "FormsMantenedores";
             this.Text = "MANTENEDORES";
             this.tabControl1.ResumeLayout(false);
-            this.tabPage2.ResumeLayout(false);
-            this.grp_datos_cliente.ResumeLayout(false);
-            this.grp_datos_cliente.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dtv_cliente_mantenedor)).EndInit();
+            this.tabPage1.ResumeLayout(false);
+            this.gbx_datoscliente.ResumeLayout(false);
+            this.gbx_datoscliente.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dgv_cliente_mantenedor)).EndInit();
             this.tabPage3.ResumeLayout(false);
             this.grp_datos_tecnico.ResumeLayout(false);
             this.grp_datos_tecnico.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgv_tecnico_mantenedor)).EndInit();
             this.tabPage4.ResumeLayout(false);
-            this.grp_datos_vendedor.ResumeLayout(false);
-            this.grp_datos_vendedor.PerformLayout();
+            this.gbx_datos_vendedor.ResumeLayout(false);
+            this.gbx_datos_vendedor.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgv_vendedor_mantenedor)).EndInit();
             this.tabPage5.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dgv_gerente_mantenedor)).EndInit();
@@ -1030,6 +1522,14 @@
             this.gbx_datos_jalmacen.ResumeLayout(false);
             this.gbx_datos_jalmacen.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgv_jalmacen_mantenedor)).EndInit();
+            this.tabPage2.ResumeLayout(false);
+            this.gbx_datos_producto.ResumeLayout(false);
+            this.gbx_datos_producto.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dgv_producto_mantenedor)).EndInit();
+            this.tabPage7.ResumeLayout(false);
+            this.gbx_datosdiagnostico_mantenedor.ResumeLayout(false);
+            this.gbx_datosdiagnostico_mantenedor.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dgv_diagnostico_mantenedor)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -1037,25 +1537,25 @@
         #endregion
 
         private System.Windows.Forms.TabControl tabControl1;
-        private System.Windows.Forms.TabPage tabPage2;
+        private System.Windows.Forms.TabPage tabPage1;
         private System.Windows.Forms.TabPage tabPage3;
         private System.Windows.Forms.TabPage tabPage4;
-        private System.Windows.Forms.DataGridView dtv_cliente_mantenedor;
+        private System.Windows.Forms.DataGridView dgv_cliente_mantenedor;
         private System.Windows.Forms.Button btn_deshabilitar_cliente;
         private System.Windows.Forms.Button btn_editar_cliente;
         private System.Windows.Forms.Button btn_nuevo_cliente;
-        private System.Windows.Forms.GroupBox grp_datos_cliente;
-        private System.Windows.Forms.TextBox txt_telefono_cliente;
-        private System.Windows.Forms.TextBox txt_nombre_cliente;
-        private System.Windows.Forms.TextBox txt_id_Cliente;
-        private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.Label label8;
-        private System.Windows.Forms.Label label9;
-        private System.Windows.Forms.Button btn_addmod_cliente;
+        private System.Windows.Forms.GroupBox gbx_datoscliente;
+        private System.Windows.Forms.CheckBox cbk_Estado_Cliente;
+        private System.Windows.Forms.DateTimePicker dtPickerRegCliente;
+        private System.Windows.Forms.TextBox txt_id_Tipocliente;
+        private System.Windows.Forms.TextBox txt_Razon_Social;
+        private System.Windows.Forms.TextBox txt_id_cliente;
+        private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Button btn_cancelar_cliente;
-        private System.Windows.Forms.CheckBox ckb_estado_cliente;
-        private System.Windows.Forms.DateTimePicker dtp_regis_cliente;
-        private System.Windows.Forms.Label label7;
+        private System.Windows.Forms.Button btn_AddMod_cliente;
         private System.Windows.Forms.GroupBox grp_datos_tecnico;
         private System.Windows.Forms.Button btn_addmod_tecnico;
         private System.Windows.Forms.Button btn_cancelar_tecnico;
@@ -1070,7 +1570,7 @@
         private System.Windows.Forms.DataGridView dgv_tecnico_mantenedor;
         private System.Windows.Forms.TextBox txt_nombre_tecnico;
         private System.Windows.Forms.TextBox txt_id_tecnico;
-        private System.Windows.Forms.GroupBox grp_datos_vendedor;
+        private System.Windows.Forms.GroupBox gbx_datos_vendedor;
         private System.Windows.Forms.TextBox txt_telefono_vendedor;
         private System.Windows.Forms.TextBox txt_nombre_vendedor;
         private System.Windows.Forms.TextBox txt_ID_vendedor;
@@ -1120,5 +1620,44 @@
         private System.Windows.Forms.Label label24;
         private System.Windows.Forms.Button btn_cancelar_gerente;
         private System.Windows.Forms.Button btn_AddMod_gerente;
+        private System.Windows.Forms.TabPage tabPage2;
+        private System.Windows.Forms.GroupBox gbx_datos_producto;
+        private System.Windows.Forms.TextBox txt_nombreproducto_mantenedor;
+        private System.Windows.Forms.CheckBox ckb_estproducto_mantenedor;
+        private System.Windows.Forms.DateTimePicker dtp_regproducto_mantenedor;
+        private System.Windows.Forms.TextBox txt_idproducto_mantenedor;
+        private System.Windows.Forms.Label label7;
+        private System.Windows.Forms.Label label8;
+        private System.Windows.Forms.Label label9;
+        private System.Windows.Forms.Button btn_cancelarproducto_mantenedor;
+        private System.Windows.Forms.Button btn_addmodproducto_mantenedor;
+        private System.Windows.Forms.Button btn_deshabilitar_producto;
+        private System.Windows.Forms.Button btn_editar_producto;
+        private System.Windows.Forms.Button btn_nuevo_producto;
+        private System.Windows.Forms.DataGridView dgv_producto_mantenedor;
+        private System.Windows.Forms.TextBox txt_tipoproducto_mantenedor;
+        private System.Windows.Forms.Label label29;
+        private System.Windows.Forms.TextBox txt_stockproductos_mantenedor;
+        private System.Windows.Forms.Label label28;
+        private System.Windows.Forms.TextBox txt_precioproducto_mantenedor;
+        private System.Windows.Forms.Label label30;
+        private System.Windows.Forms.TabPage tabPage7;
+        private System.Windows.Forms.Button btn_deshabilitardiagnostico_mantenedor;
+        private System.Windows.Forms.Button btn_editardiagnostico_mantenedor;
+        private System.Windows.Forms.Button btn_nuevodiagnostico_mantenedor;
+        private System.Windows.Forms.DataGridView dgv_diagnostico_mantenedor;
+        private System.Windows.Forms.GroupBox gbx_datosdiagnostico_mantenedor;
+        private System.Windows.Forms.TextBox txt_descdiagnostico_mantenedor;
+        private System.Windows.Forms.CheckBox ckb_estDiagnostico_mantenedor;
+        private System.Windows.Forms.DateTimePicker dtp_regisdiagnostico_mantenedor;
+        private System.Windows.Forms.TextBox txt_iddiagnostico_mantenedor;
+        private System.Windows.Forms.Label label27;
+        private System.Windows.Forms.Label label31;
+        private System.Windows.Forms.Label label32;
+        private System.Windows.Forms.Button btn_cancelardiagnostico_mantenedor;
+        private System.Windows.Forms.Button btn_addmoddiagnostico_mantenedor;
+        private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.TextBox txt_idtecnico_mantenedor;
+        private System.ComponentModel.BackgroundWorker backgroundWorker1;
     }
 }

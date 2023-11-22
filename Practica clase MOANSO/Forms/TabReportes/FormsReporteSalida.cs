@@ -16,5 +16,6 @@ namespace Practica_clase_MOANSO
         {
             InitializeComponent();
         }
+
     }
 }

@@ -15,12 +15,7 @@ namespace Practica_clase_MOANSO
         public FormsMenuReportes()
         {
             InitializeComponent();
-        }
-        private void btn_nuevo_reporteingreso_Click(object sender, EventArgs e)
-        {
-            Form formulario = new FormsReporteIngreso();
-            formulario.Show();
-        }
+        }   
         private void btn_nuevo_reportesalida_Click(object sender, EventArgs e)
         {
             Form formulario = new FormsReporteSalida();

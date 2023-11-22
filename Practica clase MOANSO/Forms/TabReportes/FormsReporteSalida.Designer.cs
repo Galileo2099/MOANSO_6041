@@ -33,9 +33,9 @@
             this.btn_editar_reportsalida = new System.Windows.Forms.Button();
             this.btn_nuevo_reportsalida = new System.Windows.Forms.Button();
             this.dgv_reportsalida = new System.Windows.Forms.DataGridView();
-            this.txt_id_reportsalida = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.gbx_datos_reportsalida = new System.Windows.Forms.GroupBox();
+            this.cmb_pedidoproducto_reportsalida = new System.Windows.Forms.ComboBox();
             this.cbk_estado_reportsalida = new System.Windows.Forms.CheckBox();
             this.dtp_regis_reportsalida = new System.Windows.Forms.DateTimePicker();
             this.txt_des_reportsalida = new System.Windows.Forms.TextBox();
@@ -43,6 +43,8 @@
             this.label2 = new System.Windows.Forms.Label();
             this.btn_cancelar_reportsalida = new System.Windows.Forms.Button();
             this.btn_AddMod_reportsalida = new System.Windows.Forms.Button();
+            this.label3 = new System.Windows.Forms.Label();
+            this.textBox1 = new System.Windows.Forms.TextBox();
             ((System.ComponentModel.ISupportInitialize)(this.dgv_reportsalida)).BeginInit();
             this.gbx_datos_reportsalida.SuspendLayout();
             this.SuspendLayout();
@@ -101,30 +103,24 @@
             this.dgv_reportsalida.Size = new System.Drawing.Size(611, 268);
             this.dgv_reportsalida.TabIndex = 22;
             // 
-            // txt_id_reportsalida
-            // 
-            this.txt_id_reportsalida.Location = new System.Drawing.Point(40, 34);
-            this.txt_id_reportsalida.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.txt_id_reportsalida.Name = "txt_id_reportsalida";
-            this.txt_id_reportsalida.Size = new System.Drawing.Size(88, 22);
-            this.txt_id_reportsalida.TabIndex = 13;
-            // 
             // label1
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.Location = new System.Drawing.Point(6, 34);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(28, 20);
+            this.label1.Size = new System.Drawing.Size(170, 20);
             this.label1.TabIndex = 6;
-            this.label1.Text = "ID";
+            this.label1.Text = "ID Pedido producto";
             // 
             // gbx_datos_reportsalida
             // 
+            this.gbx_datos_reportsalida.Controls.Add(this.textBox1);
+            this.gbx_datos_reportsalida.Controls.Add(this.label3);
+            this.gbx_datos_reportsalida.Controls.Add(this.cmb_pedidoproducto_reportsalida);
             this.gbx_datos_reportsalida.Controls.Add(this.cbk_estado_reportsalida);
             this.gbx_datos_reportsalida.Controls.Add(this.dtp_regis_reportsalida);
             this.gbx_datos_reportsalida.Controls.Add(this.txt_des_reportsalida);
-            this.gbx_datos_reportsalida.Controls.Add(this.txt_id_reportsalida);
             this.gbx_datos_reportsalida.Controls.Add(this.label5);
             this.gbx_datos_reportsalida.Controls.Add(this.label2);
             this.gbx_datos_reportsalida.Controls.Add(this.label1);
@@ -139,10 +135,18 @@
             this.gbx_datos_reportsalida.TabStop = false;
             this.gbx_datos_reportsalida.Text = "Datos";
             // 
+            // cmb_pedidoproducto_reportsalida
+            // 
+            this.cmb_pedidoproducto_reportsalida.FormattingEnabled = true;
+            this.cmb_pedidoproducto_reportsalida.Location = new System.Drawing.Point(197, 34);
+            this.cmb_pedidoproducto_reportsalida.Name = "cmb_pedidoproducto_reportsalida";
+            this.cmb_pedidoproducto_reportsalida.Size = new System.Drawing.Size(121, 24);
+            this.cmb_pedidoproducto_reportsalida.TabIndex = 19;
+            // 
             // cbk_estado_reportsalida
             // 
             this.cbk_estado_reportsalida.AutoSize = true;
-            this.cbk_estado_reportsalida.Location = new System.Drawing.Point(525, 81);
+            this.cbk_estado_reportsalida.Location = new System.Drawing.Point(543, 92);
             this.cbk_estado_reportsalida.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.cbk_estado_reportsalida.Name = "cbk_estado_reportsalida";
             this.cbk_estado_reportsalida.Size = new System.Drawing.Size(157, 20);
@@ -152,7 +156,7 @@
             // 
             // dtp_regis_reportsalida
             // 
-            this.dtp_regis_reportsalida.Location = new System.Drawing.Point(543, 36);
+            this.dtp_regis_reportsalida.Location = new System.Drawing.Point(543, 50);
             this.dtp_regis_reportsalida.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.dtp_regis_reportsalida.Name = "dtp_regis_reportsalida";
             this.dtp_regis_reportsalida.Size = new System.Drawing.Size(264, 22);
@@ -164,14 +168,14 @@
             this.txt_des_reportsalida.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txt_des_reportsalida.Multiline = true;
             this.txt_des_reportsalida.Name = "txt_des_reportsalida";
-            this.txt_des_reportsalida.Size = new System.Drawing.Size(459, 78);
+            this.txt_des_reportsalida.Size = new System.Drawing.Size(491, 78);
             this.txt_des_reportsalida.TabIndex = 14;
             // 
             // label5
             // 
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(387, 38);
+            this.label5.Location = new System.Drawing.Point(539, 17);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(131, 20);
             this.label5.TabIndex = 12;
@@ -202,13 +206,30 @@
             // btn_AddMod_reportsalida
             // 
             this.btn_AddMod_reportsalida.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_AddMod_reportsalida.Location = new System.Drawing.Point(569, 127);
+            this.btn_AddMod_reportsalida.Location = new System.Drawing.Point(543, 127);
             this.btn_AddMod_reportsalida.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btn_AddMod_reportsalida.Name = "btn_AddMod_reportsalida";
             this.btn_AddMod_reportsalida.Size = new System.Drawing.Size(116, 43);
             this.btn_AddMod_reportsalida.TabIndex = 8;
             this.btn_AddMod_reportsalida.Text = "---";
             this.btn_AddMod_reportsalida.UseVisualStyleBackColor = true;
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.Location = new System.Drawing.Point(362, 38);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(28, 20);
+            this.label3.TabIndex = 20;
+            this.label3.Text = "ID";
+            // 
+            // textBox1
+            // 
+            this.textBox1.Location = new System.Drawing.Point(405, 38);
+            this.textBox1.Name = "textBox1";
+            this.textBox1.Size = new System.Drawing.Size(96, 22);
+            this.textBox1.TabIndex = 21;
             // 
             // FormsReporteSalida
             // 
@@ -237,7 +258,6 @@
         private System.Windows.Forms.Button btn_editar_reportsalida;
         private System.Windows.Forms.Button btn_nuevo_reportsalida;
         private System.Windows.Forms.DataGridView dgv_reportsalida;
-        private System.Windows.Forms.TextBox txt_id_reportsalida;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.GroupBox gbx_datos_reportsalida;
         private System.Windows.Forms.CheckBox cbk_estado_reportsalida;
@@ -247,5 +267,8 @@
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Button btn_cancelar_reportsalida;
         private System.Windows.Forms.Button btn_AddMod_reportsalida;
+        private System.Windows.Forms.ComboBox cmb_pedidoproducto_reportsalida;
+        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.Label label3;
     }
 }

@@ -29,95 +29,85 @@
         private void InitializeComponent()
         {
             this.tabControl1 = new System.Windows.Forms.TabControl();
-            this.tabPage1 = new System.Windows.Forms.TabPage();
-            this.panel2 = new System.Windows.Forms.Panel();
-            this.btn_eliminar_reporteingreso = new System.Windows.Forms.Button();
-            this.btn_nuevo_reporteingreso = new System.Windows.Forms.Button();
-            this.dgv_reporteringreso = new System.Windows.Forms.DataGridView();
-            this.tabPage2 = new System.Windows.Forms.TabPage();
-            this.panel1 = new System.Windows.Forms.Panel();
-            this.btn_eliminar_reportesalida = new System.Windows.Forms.Button();
-            this.btn_nuevo_reportesalida = new System.Windows.Forms.Button();
-            this.dgv_reportersalida = new System.Windows.Forms.DataGridView();
             this.tabPage7 = new System.Windows.Forms.TabPage();
             this.panel7 = new System.Windows.Forms.Panel();
             this.btn_eliminar_reporterpedidoproducto = new System.Windows.Forms.Button();
             this.btn_nuevo_reporterpedidoproducto = new System.Windows.Forms.Button();
             this.dgv_pedidoproducto = new System.Windows.Forms.DataGridView();
+            this.tabPage2 = new System.Windows.Forms.TabPage();
+            this.panel1 = new System.Windows.Forms.Panel();
+            this.btn_eliminar_reportesalida = new System.Windows.Forms.Button();
+            this.btn_nuevo_reportesalida = new System.Windows.Forms.Button();
+            this.dgv_reportersalida = new System.Windows.Forms.DataGridView();
             this.tabControl1.SuspendLayout();
-            this.tabPage1.SuspendLayout();
-            this.panel2.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dgv_reporteringreso)).BeginInit();
-            this.tabPage2.SuspendLayout();
-            this.panel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dgv_reportersalida)).BeginInit();
             this.tabPage7.SuspendLayout();
             this.panel7.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgv_pedidoproducto)).BeginInit();
+            this.tabPage2.SuspendLayout();
+            this.panel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dgv_reportersalida)).BeginInit();
             this.SuspendLayout();
             // 
             // tabControl1
             // 
             this.tabControl1.Controls.Add(this.tabPage7);
             this.tabControl1.Controls.Add(this.tabPage2);
-            this.tabControl1.Controls.Add(this.tabPage1);
             this.tabControl1.Location = new System.Drawing.Point(0, 0);
             this.tabControl1.Name = "tabControl1";
             this.tabControl1.SelectedIndex = 0;
             this.tabControl1.Size = new System.Drawing.Size(826, 489);
             this.tabControl1.TabIndex = 0;
             // 
-            // tabPage1
+            // tabPage7
             // 
-            this.tabPage1.Controls.Add(this.panel2);
-            this.tabPage1.Controls.Add(this.dgv_reporteringreso);
-            this.tabPage1.Location = new System.Drawing.Point(4, 25);
-            this.tabPage1.Name = "tabPage1";
-            this.tabPage1.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage1.Size = new System.Drawing.Size(818, 460);
-            this.tabPage1.TabIndex = 0;
-            this.tabPage1.Text = "Ingreso";
-            this.tabPage1.UseVisualStyleBackColor = true;
+            this.tabPage7.Controls.Add(this.panel7);
+            this.tabPage7.Controls.Add(this.dgv_pedidoproducto);
+            this.tabPage7.Location = new System.Drawing.Point(4, 25);
+            this.tabPage7.Name = "tabPage7";
+            this.tabPage7.Size = new System.Drawing.Size(818, 460);
+            this.tabPage7.TabIndex = 6;
+            this.tabPage7.Text = "Pedido Producto";
+            this.tabPage7.UseVisualStyleBackColor = true;
             // 
-            // panel2
+            // panel7
             // 
-            this.panel2.Controls.Add(this.btn_eliminar_reporteingreso);
-            this.panel2.Controls.Add(this.btn_nuevo_reporteingreso);
-            this.panel2.Location = new System.Drawing.Point(574, 113);
-            this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(200, 233);
-            this.panel2.TabIndex = 3;
+            this.panel7.Controls.Add(this.btn_eliminar_reporterpedidoproducto);
+            this.panel7.Controls.Add(this.btn_nuevo_reporterpedidoproducto);
+            this.panel7.Location = new System.Drawing.Point(574, 113);
+            this.panel7.Name = "panel7";
+            this.panel7.Size = new System.Drawing.Size(200, 233);
+            this.panel7.TabIndex = 1;
             // 
-            // btn_eliminar_reporteingreso
+            // btn_eliminar_reporterpedidoproducto
             // 
-            this.btn_eliminar_reporteingreso.Dock = System.Windows.Forms.DockStyle.Top;
-            this.btn_eliminar_reporteingreso.Location = new System.Drawing.Point(0, 109);
-            this.btn_eliminar_reporteingreso.Name = "btn_eliminar_reporteingreso";
-            this.btn_eliminar_reporteingreso.Size = new System.Drawing.Size(200, 109);
-            this.btn_eliminar_reporteingreso.TabIndex = 3;
-            this.btn_eliminar_reporteingreso.Text = "Eliminar";
-            this.btn_eliminar_reporteingreso.UseVisualStyleBackColor = true;
+            this.btn_eliminar_reporterpedidoproducto.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btn_eliminar_reporterpedidoproducto.Location = new System.Drawing.Point(0, 111);
+            this.btn_eliminar_reporterpedidoproducto.Name = "btn_eliminar_reporterpedidoproducto";
+            this.btn_eliminar_reporterpedidoproducto.Size = new System.Drawing.Size(200, 111);
+            this.btn_eliminar_reporterpedidoproducto.TabIndex = 1;
+            this.btn_eliminar_reporterpedidoproducto.Text = "Eliminar";
+            this.btn_eliminar_reporterpedidoproducto.UseVisualStyleBackColor = true;
             // 
-            // btn_nuevo_reporteingreso
+            // btn_nuevo_reporterpedidoproducto
             // 
-            this.btn_nuevo_reporteingreso.Dock = System.Windows.Forms.DockStyle.Top;
-            this.btn_nuevo_reporteingreso.Location = new System.Drawing.Point(0, 0);
-            this.btn_nuevo_reporteingreso.Name = "btn_nuevo_reporteingreso";
-            this.btn_nuevo_reporteingreso.Size = new System.Drawing.Size(200, 109);
-            this.btn_nuevo_reporteingreso.TabIndex = 2;
-            this.btn_nuevo_reporteingreso.Text = "Nuevo";
-            this.btn_nuevo_reporteingreso.UseVisualStyleBackColor = true;
-            this.btn_nuevo_reporteingreso.Click += new System.EventHandler(this.btn_nuevo_reporteingreso_Click);
+            this.btn_nuevo_reporterpedidoproducto.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btn_nuevo_reporterpedidoproducto.Location = new System.Drawing.Point(0, 0);
+            this.btn_nuevo_reporterpedidoproducto.Name = "btn_nuevo_reporterpedidoproducto";
+            this.btn_nuevo_reporterpedidoproducto.Size = new System.Drawing.Size(200, 111);
+            this.btn_nuevo_reporterpedidoproducto.TabIndex = 0;
+            this.btn_nuevo_reporterpedidoproducto.Text = "Nuevo";
+            this.btn_nuevo_reporterpedidoproducto.UseVisualStyleBackColor = true;
+            this.btn_nuevo_reporterpedidoproducto.Click += new System.EventHandler(this.btn_nuevo_reporterpedidoproducto_Click);
             // 
-            // dgv_reporteringreso
+            // dgv_pedidoproducto
             // 
-            this.dgv_reporteringreso.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgv_reporteringreso.Location = new System.Drawing.Point(6, 6);
-            this.dgv_reporteringreso.Name = "dgv_reporteringreso";
-            this.dgv_reporteringreso.RowHeadersWidth = 51;
-            this.dgv_reporteringreso.RowTemplate.Height = 24;
-            this.dgv_reporteringreso.Size = new System.Drawing.Size(490, 448);
-            this.dgv_reporteringreso.TabIndex = 0;
+            this.dgv_pedidoproducto.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgv_pedidoproducto.Location = new System.Drawing.Point(6, 6);
+            this.dgv_pedidoproducto.Name = "dgv_pedidoproducto";
+            this.dgv_pedidoproducto.RowHeadersWidth = 51;
+            this.dgv_pedidoproducto.RowTemplate.Height = 24;
+            this.dgv_pedidoproducto.Size = new System.Drawing.Size(490, 448);
+            this.dgv_pedidoproducto.TabIndex = 0;
             // 
             // tabPage2
             // 
@@ -171,57 +161,6 @@
             this.dgv_reportersalida.Size = new System.Drawing.Size(490, 448);
             this.dgv_reportersalida.TabIndex = 0;
             // 
-            // tabPage7
-            // 
-            this.tabPage7.Controls.Add(this.panel7);
-            this.tabPage7.Controls.Add(this.dgv_pedidoproducto);
-            this.tabPage7.Location = new System.Drawing.Point(4, 25);
-            this.tabPage7.Name = "tabPage7";
-            this.tabPage7.Size = new System.Drawing.Size(818, 460);
-            this.tabPage7.TabIndex = 6;
-            this.tabPage7.Text = "Pedido Producto";
-            this.tabPage7.UseVisualStyleBackColor = true;
-            // 
-            // panel7
-            // 
-            this.panel7.Controls.Add(this.btn_eliminar_reporterpedidoproducto);
-            this.panel7.Controls.Add(this.btn_nuevo_reporterpedidoproducto);
-            this.panel7.Location = new System.Drawing.Point(574, 113);
-            this.panel7.Name = "panel7";
-            this.panel7.Size = new System.Drawing.Size(200, 233);
-            this.panel7.TabIndex = 1;
-            // 
-            // btn_eliminar_reporterpedidoproducto
-            // 
-            this.btn_eliminar_reporterpedidoproducto.Dock = System.Windows.Forms.DockStyle.Top;
-            this.btn_eliminar_reporterpedidoproducto.Location = new System.Drawing.Point(0, 111);
-            this.btn_eliminar_reporterpedidoproducto.Name = "btn_eliminar_reporterpedidoproducto";
-            this.btn_eliminar_reporterpedidoproducto.Size = new System.Drawing.Size(200, 111);
-            this.btn_eliminar_reporterpedidoproducto.TabIndex = 1;
-            this.btn_eliminar_reporterpedidoproducto.Text = "Eliminar";
-            this.btn_eliminar_reporterpedidoproducto.UseVisualStyleBackColor = true;
-            // 
-            // btn_nuevo_reporterpedidoproducto
-            // 
-            this.btn_nuevo_reporterpedidoproducto.Dock = System.Windows.Forms.DockStyle.Top;
-            this.btn_nuevo_reporterpedidoproducto.Location = new System.Drawing.Point(0, 0);
-            this.btn_nuevo_reporterpedidoproducto.Name = "btn_nuevo_reporterpedidoproducto";
-            this.btn_nuevo_reporterpedidoproducto.Size = new System.Drawing.Size(200, 111);
-            this.btn_nuevo_reporterpedidoproducto.TabIndex = 0;
-            this.btn_nuevo_reporterpedidoproducto.Text = "Nuevo";
-            this.btn_nuevo_reporterpedidoproducto.UseVisualStyleBackColor = true;
-            this.btn_nuevo_reporterpedidoproducto.Click += new System.EventHandler(this.btn_nuevo_reporterpedidoproducto_Click);
-            // 
-            // dgv_pedidoproducto
-            // 
-            this.dgv_pedidoproducto.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgv_pedidoproducto.Location = new System.Drawing.Point(6, 6);
-            this.dgv_pedidoproducto.Name = "dgv_pedidoproducto";
-            this.dgv_pedidoproducto.RowHeadersWidth = 51;
-            this.dgv_pedidoproducto.RowTemplate.Height = 24;
-            this.dgv_pedidoproducto.Size = new System.Drawing.Size(490, 448);
-            this.dgv_pedidoproducto.TabIndex = 0;
-            // 
             // FormsMenuReportes
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -231,15 +170,12 @@
             this.Name = "FormsMenuReportes";
             this.Text = "REPORTES";
             this.tabControl1.ResumeLayout(false);
-            this.tabPage1.ResumeLayout(false);
-            this.panel2.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.dgv_reporteringreso)).EndInit();
-            this.tabPage2.ResumeLayout(false);
-            this.panel1.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.dgv_reportersalida)).EndInit();
             this.tabPage7.ResumeLayout(false);
             this.panel7.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dgv_pedidoproducto)).EndInit();
+            this.tabPage2.ResumeLayout(false);
+            this.panel1.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.dgv_reportersalida)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -247,14 +183,9 @@
         #endregion
 
         private System.Windows.Forms.TabControl tabControl1;
-        private System.Windows.Forms.TabPage tabPage1;
         private System.Windows.Forms.TabPage tabPage2;
-        private System.Windows.Forms.DataGridView dgv_reporteringreso;
         private System.Windows.Forms.DataGridView dgv_reportersalida;
-        private System.Windows.Forms.Button btn_nuevo_reporteingreso;
         private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.Panel panel2;
-        private System.Windows.Forms.Button btn_eliminar_reporteingreso;
         private System.Windows.Forms.Button btn_eliminar_reportesalida;
         private System.Windows.Forms.Button btn_nuevo_reportesalida;
         private System.Windows.Forms.TabPage tabPage7;

@@ -134,7 +134,7 @@
             // 
             this.textBox4.Location = new System.Drawing.Point(530, 169);
             this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(252, 22);
+            this.textBox4.Size = new System.Drawing.Size(118, 22);
             this.textBox4.TabIndex = 4;
             // 
             // label4
@@ -142,9 +142,9 @@
             this.label4.AutoSize = true;
             this.label4.Location = new System.Drawing.Point(536, 150);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(56, 16);
+            this.label4.Size = new System.Drawing.Size(72, 16);
             this.label4.TabIndex = 3;
-            this.label4.Text = "Nombre";
+            this.label4.Text = "ID Tecnico";
             // 
             // textBox3
             // 
@@ -158,9 +158,9 @@
             this.label3.AutoSize = true;
             this.label3.Location = new System.Drawing.Point(536, 71);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(20, 16);
+            this.label3.Size = new System.Drawing.Size(121, 16);
             this.label3.TabIndex = 1;
-            this.label3.Text = "ID";
+            this.label3.Text = "ID ServicioTecnico";
             // 
             // dataGridView2
             // 
